@@ -191,7 +191,6 @@
         align-content: center;
         display: block;
         overflow-y: scroll;
-        height: 100vh;
     }
     .navbar-menu {
         display: none;
