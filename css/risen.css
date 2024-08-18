@@ -492,4 +492,11 @@ cite {
         font-size: clamp(7px, 2vh, 60px);
     }
 
+    .flexbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+        gap: 10px; /* Space between grid items */
+    }
+
 }
