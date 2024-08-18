@@ -485,4 +485,8 @@ cite {
         max-height: 50vh;
     }
 
+    .overlay {
+        font-size: clamp(7px, 2vh, 60px);
+    }
+
 }
