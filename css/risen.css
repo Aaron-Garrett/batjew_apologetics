@@ -372,12 +372,17 @@ cite {
 @media (max-width: 480px) {
 
     .box {
-        padding-top: 50vh;
+        padding-top: 30vh;
         height: 20vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
         grid-template-rows: repeat(2, 1fr); /* 2 rows */
         gap: 1vh; /* Space between grid items */
+    }
+
+    .row {
+        height: 15vh;
+        width: 80vw;
     }
 
     .image-container {
