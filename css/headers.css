@@ -1,0 +1,82 @@
+.intro {
+    position: relative;
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+
+.intro h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro p {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    border: white 2px solid;
+    padding: 12px;
+}
+
+.intro::before{
+    content:"";
+    background-image: url('background_images/homeheadbckrnd.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+    padding-top: 120px;
+}
+
+.intro h1 {
+    position: relative;
+    color: white;
+    font-size: 4rem;
+}
+
+.introduction{
+    position: flex;
+    height: 100%;
+    top: 50%;
+}
+
+.introduction::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:black;
+    opacity: .48;
+    height: 100%;
+}
+
+.introduction h1 {
+    top: 36%;
+    position: relative;
+    text-align: center;
+}
+
+.introduction p{
+    top: 25vh;
+    position: relative;
+    margin: 25px;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 45vh;
+}
+
+@media (max-width: 480px) {
+
+    .introduction h1 {
+        font-size: clamp(12px, 7vh, 68px);
+    }
+
+    .introduction p {
+        top: 28vh;
+    }
+
+}

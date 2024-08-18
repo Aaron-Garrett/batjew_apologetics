@@ -1,0 +1,187 @@
+body {
+    width:100%;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+ }
+
+.box span {
+    font-size: xx-large;
+}
+
+.centered {
+    text-align: center;
+}
+
+.citation {
+    font-size: xx-small;
+    color: navy;
+    text-align: right;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 50px;
+    color: navy;
+    font-style: bold;
+    padding-top: 10px;
+    text-align: center;
+    font: Garamond;
+}
+
+h3 {
+    padding-top: 10px;
+    text-align: center;
+    font: Garamond;
+}
+
+.hold_list {
+    display:flex;
+    justify-content: center;
+}
+
+.key_list{
+    font-weight: bolder;
+    font-size: larger;
+    text-align: left;
+}
+
+.ontological {
+    text-align: center;
+    font-size: large;
+    color: midnightblue;
+    font-weight: bold;
+    background-color: snow;
+    vertical-align: middle;
+}
+
+.pageDivider {
+    width: 100%;
+    height: 50px;
+}
+
+section {
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    vertical-align: middle;
+}
+
+#bible{
+    width: 100%;
+    height: auto;
+    float:right;
+}
+
+#doesheexist {
+    width: auto;
+    height: 250%;
+    float:left;
+}
+
+#earth {
+    width: 100%;
+    height: auto;
+    float:left;
+}
+
+#Existence {
+    background-color: lightgrey;
+    height: 100%;
+    align-items: center;
+}
+
+#Existence span {
+    color: navy;
+    align-content: center;
+    width: 75%;
+}
+
+#Existence h2 {
+    color: navy;
+}
+
+#mission{
+    width: auto;
+    height: 500%;
+    float:right;
+}
+
+#NTEvid {
+    background-color: white;
+    height: 100%;
+    align-items: center;
+}
+
+#NTEvid span {
+    color: navy;
+    align-content: center;
+    width: 75%;
+}
+
+#NTEvid h2 {
+    color: navy;
+}
+
+#OurMission {
+    background-color: white;
+    height:100%;
+    align-items: center;
+}
+
+#OurMission span {
+    color: navy;
+    align-content: center;
+    width: 75%;
+}
+
+#OurMission h2 {
+    color: navy;
+}
+
+#science{
+    width: 100%;
+    height: auto;
+    float:right;
+}
+
+#WhoFor {
+background-color: lightgrey;
+height: 100%;
+align-items: center;
+}
+
+#WhoFor span {
+    color: navy;
+    align-content: center;
+    width: 75%;
+}
+
+#WhoFor h2 {
+    color: navy;
+}
+
+#WhyImport {
+    background-color: white;
+height: 100%;
+align-items: center;
+}
+
+#WhyImport h2{
+    color: navy;
+}
+
+#WhyImport span {
+    color: navy;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 75%;
+}

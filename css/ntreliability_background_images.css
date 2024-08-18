@@ -1,0 +1,111 @@
+@media (max-width: 480px) {
+    
+    .lighter {
+        background-color: black;
+        opacity: .8;
+    }
+
+    .brown {
+        opacity: .8;
+    }
+    
+    .copiesimage {
+        position: relative;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .copiesimage::before {
+        content: "";
+        background-image: url('background_images/pink_lily_single_slightly_blurred.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .8;
+    }
+
+    .historicalimage {
+        position: relative;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .historicalimage::before {
+        content: "";
+        background-image: url('background_images/historical.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .8;
+    }
+
+    .archeologyimage {
+        position: relative;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .archeologyimage::before {
+        content: "";
+        background-image: url('background_images/archeology.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .8;
+    }
+
+    .inexactimage {
+        position: relative;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .inexactimage::before {
+        content: "";
+        background-image: url('background_images/corroboration.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .8;
+    }
+
+    .numerousimage {
+        position: relative;
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .numerousimage::before {
+        content: "";
+        background-image: url('background_images/numerous.png');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .8;
+    }
+
+    #end p{
+        height: 45vh;
+    }
+
+}

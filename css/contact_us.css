@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    font-size: clamp(40px, 20vh, 36px);
+    border: black ridge 1vw;
+    margin: 1vw;
+    padding: .5vw;
+    align-content: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100vw;
+    font-size: clamp(24px, 7vh, 68px);
+    color: navy;
+    font-style: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+div {
+    width: 100vw;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    font-size: clamp(24px, 5vh, 68px);
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    vertical-align: middle;
+    padding-top: 17vh;
+}

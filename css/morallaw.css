@@ -1,0 +1,244 @@
+blockquote {
+    font-style: italic; /* Italicize the text */
+    margin: 20px 0; /* Add margin for spacing */
+    padding: 10px 20px; /* Add padding inside the blockquote */
+    background-color:rgb(251, 243, 224); /* Light background color */
+    opacity: .85;
+    color: rgb(72, 78, 82);
+    font-weight: bolder;
+    border-left: 1vw solid #173550; /* Left border for quote indication */
+    width: 33vw;
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+
+
+.anchor {
+    scroll-behavior: smooth;
+}
+  
+p {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: clamp(16px, 3vh, 48px);
+}
+
+h2 {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: clamp(28px, 4vh, 86px);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banded {
+    background-color:rgb(251, 243, 224);
+    color: #173550;
+    opacity: 1;
+    font-weight: bold;
+    width: 100%;
+    font-size: clamp(28px, 5vh, 86px);
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.background {
+    background-image: url('background_images/law3.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    height: 300vh; /* Adjust height as needed */
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+    color: rgb(251, 243, 224);
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+}
+
+.top {
+    height: 95vh;
+    padding-top: 27vh;
+}
+
+.full {
+    height: 100vh;
+}
+
+section {
+    padding-top: 7px;
+    margin-bottom: 10vh;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+    height: auto;
+}
+
+.grey {
+    /* background-color: rgb(95, 111, 125, .85); */
+    background-color: rgb(72, 78, 82, .85);
+    width: 95vw;
+}
+
+.blue {
+    background-color: rgb(23, 53, 80, .85);
+    width: 95vw;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box img {
+    max-height: 27vh;
+    opacity: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay {
+    z-index: 1000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+    font-size: clamp(12px, 3vh, 60px);
+}
+
+.overlay-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+@media (max-width: 480px) {
+
+    .grey {
+        /* background-color: rgb(95, 111, 125, .85); */
+        background-color: rgb(72, 78, 82, .85);
+        width: 75vw;
+    }
+    
+    .blue {
+        background-color: rgb(23, 53, 80, .85);
+        width: 75vw;
+    }
+    
+
+    section p {
+        font-size: clamp(6px, 2vh, 60px);
+    
+    }
+    
+    .background {
+        height: 700vh;
+    }
+    
+    .banded {
+        width: 75vw;
+        font-size: clamp(24px, 3vh, 86px);
+    }
+    
+    .black {
+        align-content: center;
+        justify-content: center;
+    }
+    
+    blockquote {
+        margin: 1vw 0; /* Add margin for spacing */
+        padding: 3vw; /* Add padding inside the blockquote */
+        opacity: .85;
+        border-left: 3vw solid #173550; /* Left border for quote indication */
+        width: 75vw;
+        text-align: center;
+    }
+    
+
+    .box {
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 75vw;
+        flex-wrap: wrap;
+        max-height: 69vh;    
+    }
+    
+    .box img {
+        min-width: 75vw;
+        max-width: 75vw;
+        max-height: 23vh;
+    }
+    
+    .image-container {
+        max-width: 85vw;
+        max-height: 33vh;
+    }
+    
+    .overlay {
+        max-height: 33vh;
+    }
+    
+    h2 {
+        font-size: clamp(20px, 3vh, 50px);
+    }
+    
+    }
