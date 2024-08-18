@@ -193,6 +193,7 @@
         overflow-y: scroll;
     }
     .navbar-menu {
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #3a84ef;
