@@ -198,6 +198,7 @@
         background-color: #3a84ef;
         position: fixed;
         height: 100vh;
+        z-index: 10000;
     }
 
     .navbar-menu.show {
