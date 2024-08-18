@@ -376,24 +376,24 @@ cite {
     }
 
     .image-container {
-        min-height: 23vh;
-        max-height: 23vh;
-        min-width: 45vw;
-        max-width: 45vw;
+        min-height: 18vh;
+        max-height: 18vh;
+        min-width: 40vw;
+        max-width: 40vw;
     }
 
     .box img {
-        min-height: 23vh;
-        max-height: 23vh;
-        min-width: 45vw;
-        max-width: 45vw;
+        min-height: 18vh;
+        max-height: 18vh;
+        min-width: 40vw;
+        max-width: 40vw;
     }
 
     .box a {
-        min-height: 23vh;
-        max-height: 23vh;
-        min-width: 45vw;
-        max-width: 45vw;
+        min-height: 18vh;
+        max-height: 18vh;
+        min-width: 40vw;
+        max-width: 40vw;
     }
 
     .evidence h2 {
