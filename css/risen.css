@@ -373,6 +373,7 @@ cite {
 
     .box {
         height: 40vh;
+        flex-wrap: wrap;
     }
 
     .box img {
