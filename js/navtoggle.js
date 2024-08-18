@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.classList.toggle('show');
     }
 
-    toggleButton.addEventListener('click', toggleNavbar);
-    toggleButton.addEventListener('touchend', toggleNavbar);
+    toggleButton.addEventListener('click', toggleMenu);
+    toggleButton.addEventListener('touchend', toggleMenu);
 });
