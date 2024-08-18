@@ -72,6 +72,7 @@
 @media (max-width: 480px) {
 
     .introduction h1 {
+        top: 20vh;
         font-size: clamp(12px, 7vh, 68px);
     }
 
