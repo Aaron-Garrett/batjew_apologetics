@@ -202,7 +202,7 @@
     }
 
     .navbar-menu.show {
-        display: flex;
+        display: block;
     }
 
     .navbar-menu a {
