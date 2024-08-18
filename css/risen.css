@@ -372,28 +372,31 @@ cite {
 @media (max-width: 480px) {
 
     .box {
-        height: 50vh;
+        height: 45vh;
     }
 
     .image-container {
-        min-height: 18vh;
-        max-height: 18vh;
-        min-width: 40vw;
-        max-width: 40vw;
+        padding-top: 1vh;
+        min-height: 17vh;
+        max-height: 17vh;
+        min-width: 35vw;
+        max-width: 35vw;
     }
 
     .box img {
-        min-height: 18vh;
-        max-height: 18vh;
-        min-width: 40vw;
-        max-width: 40vw;
+        padding-top: 1vh;
+        min-height: 17vh;
+        max-height: 17vh;
+        min-width: 35vw;
+        max-width: 35vw;
     }
 
     .box a {
-        min-height: 18vh;
-        max-height: 18vh;
-        min-width: 40vw;
-        max-width: 40vw;
+        padding-top: 1vh;
+        min-height: 17vh;
+        max-height: 17vh;
+        min-width: 35vw;
+        max-width: 35vw;
     }
 
     .evidence h2 {
