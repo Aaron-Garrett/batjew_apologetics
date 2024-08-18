@@ -378,22 +378,22 @@ cite {
     .image-container {
         min-height: 23vh;
         max-height: 23vh;
-        min-width: 15vw;
-        max-width: 15vw;
+        min-width: 45vw;
+        max-width: 45vw;
     }
 
     .box img {
         min-height: 23vh;
         max-height: 23vh;
-        min-width: 15vw;
-        max-width: 15vw;
+        min-width: 45vw;
+        max-width: 45vw;
     }
 
     .box a {
         min-height: 23vh;
         max-height: 23vh;
-        min-width: 15vw;
-        max-width: 15vw;
+        min-width: 45vw;
+        max-width: 45vw;
     }
 
     .evidence h2 {
