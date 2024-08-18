@@ -203,6 +203,7 @@
 
     .navbar-menu.show {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .navbar-menu a {
