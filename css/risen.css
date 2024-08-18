@@ -90,7 +90,7 @@ cite {
 }
 
 .flexbox {
-    display: flex;
+    display: flexbox;
     justify-content: space-around;
     height: 100%;
 }
