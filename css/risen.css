@@ -371,6 +371,31 @@ cite {
 
 @media (max-width: 480px) {
 
+    .box {
+        height: 50vh;
+    }
+
+    .image-container {
+        min-height: 23vh;
+        max-height: 23vh;
+        min-width: 15vw;
+        max-width: 15vw;
+    }
+
+    .box img {
+        min-height: 23vh;
+        max-height: 23vh;
+        min-width: 15vw;
+        max-width: 15vw;
+    }
+
+    .box a {
+        min-height: 23vh;
+        max-height: 23vh;
+        min-width: 15vw;
+        max-width: 15vw;
+    }
+
     .evidence h2 {
         top: 2vh;
         position: relative;
