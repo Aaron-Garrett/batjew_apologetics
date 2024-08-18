@@ -413,7 +413,7 @@ align-items: center;
 
     .image-box {
         padding-top: 1vh;
-        display: flex;
+        display: block;
         justify-content: space-around;
         align-items: center;
         width: 100vw;
