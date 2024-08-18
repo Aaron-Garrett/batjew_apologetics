@@ -207,15 +207,18 @@
 
     .navbar-menu a {
         width: 90%;
+        height: 15vh;
     }
 
     .navbar-menu li {
         margin: 0;
         text-align: center;
+        height: 15vh;
     }
 
     .navbar-toggle {
         display: block;
         margin: 0 auto;
+        height: 15vh;
     }
 }
