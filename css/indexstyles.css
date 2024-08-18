@@ -357,6 +357,9 @@ align-items: center;
         font: Garamond;
     }
 
+    .image-container .overlay {
+        opacity: 1;
+    }
 
     #WhoFor span {
         font-family: Garamond, 'Times New Roman', Times, serif;
