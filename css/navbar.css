@@ -168,38 +168,38 @@
         overflow-y: scroll;
         position: relative;
     }
-    
     .navbar-menu {
         display: none;
         flex-direction: column;
-        position: fixed; /* Ensures the menu is fixed relative to the viewport */
+        position: fixed;
         width: 100%;
         background-color: #3a84ef;
-        height: 100vh; /* Full viewport height */
-        z-index: 10000; /* Ensures the menu is above other elements */
-        top: 0; /* Aligns the menu to the top of the viewport */
-        left: 0; /* Aligns the menu to the left of the viewport */
+        position: fixed;
+        height: 100vh;
+        z-index: 10000;
     }
-    
+
     .navbar-menu.show {
-        display: flex; /* Show the menu when the class is added */
-        overflow-y: auto; /* Allows scrolling if content overflows */
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        overflow-y: visible;
     }
-    
+
     .navbar-menu a {
         width: 90%;
         height: 10vh;
         display: block;
         text-align: center;
-        line-height: 10vh; /* Center text vertically */
     }
-    
+
     .navbar-menu li {
         margin: 0;
         text-align: center;
         height: 10vh;
     }
-    
+
     .navbar-toggle {
         display: flex;
         flex-direction: column;
@@ -208,5 +208,4 @@
         margin: 0 auto;
         height: 10vh;
     }
-    
 }
