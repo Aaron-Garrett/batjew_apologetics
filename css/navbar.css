@@ -70,6 +70,11 @@
     height: 99%;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar li {
     position: relative;
     width: 13vw;
