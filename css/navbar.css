@@ -36,8 +36,10 @@
 
 .navbar {
     height: 12vh;
-    display: inline-block;
-    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
 .patreon {
