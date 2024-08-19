@@ -36,10 +36,8 @@
 
 .navbar {
     height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
+    display: inline-block;
+    overflow:hidden;
 }
 
 .patreon {
@@ -197,7 +195,6 @@
     .navbar-menu {
         display: none;
         flex-direction: column;
-        position: absolute;
         width: 100%;
         background-color: #3a84ef;
         position: fixed;
@@ -206,7 +203,7 @@
     }
 
     .navbar-menu.show {
-        display: block;
+        display: flex;
         height: 100vh;
         overflow-y: scroll;
     }
@@ -223,13 +220,8 @@
     }
 
     .navbar-toggle {
-        display: flex;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        height: 10vh;
     }
 }
