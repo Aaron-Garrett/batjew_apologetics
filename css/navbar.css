@@ -36,8 +36,10 @@
 
 .navbar {
     height: 12vh;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     overflow:hidden;
+    width: 100vw;
 }
 
 .patreon {
@@ -48,36 +50,9 @@
     height: 7vh;
 }
 
-.subnav {
-    width: 100%;
-    display: inline-block;
-}
-
-.subnavbtn {
-    display: inline-block;
-}
-
-/* The subnavigation menu */
-.subnav {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-
 .navbar-menu {
     margin: 0px;
-    list-style-type: none;
+    width: 100vw;
 }
 
 .navbar a {
@@ -187,14 +162,16 @@
 /* Styles for mobile devices (e.g., phones) */
 @media (max-width: 480px) {
     .navbar {
-        justify-content: center;
+        justify-content: space-between;
         align-content: center;
-        display: block;
+        display: flex;
         overflow-y: scroll;
+        position: relative;
     }
     .navbar-menu {
         display: none;
         flex-direction: column;
+        position: absolute;
         width: 100%;
         background-color: #3a84ef;
         position: fixed;
@@ -211,6 +188,8 @@
     .navbar-menu a {
         width: 90%;
         height: 10vh;
+        display: block;
+        text-align: center;
     }
 
     .navbar-menu li {
@@ -220,7 +199,10 @@
     }
 
     .navbar-toggle {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
         margin: 0 auto;
         height: 10vh;
     }
