@@ -181,6 +181,7 @@
 
     .navbar-menu.show {
         display: flex;
+        position: absolute;
         flex-direction: column;
         height: 100vh;
         overflow-y: visible;
