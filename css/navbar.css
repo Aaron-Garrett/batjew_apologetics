@@ -162,38 +162,39 @@
 /* Styles for mobile devices (e.g., phones) */
 @media (max-width: 480px) {
     .navbar {
+        /* Remove unnecessary styles */
         justify-content: space-between;
         align-content: center;
         display: flex;
-        overflow-y: scroll;
-        position: relative;
+        overflow: hidden; /* Hide any overflow */
+        height: auto; /* Allow height to adjust based on content */
+        overflow: hidden; /* Hide any overflowing content */        
     }
     .navbar-menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        width: 100%;
+        position: fixed; /* Ensure it stays fixed to the viewport */
+        top: 0; /* Position at the top */
+        left: 0; /* Align to the left */
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
         background-color: #3a84ef;
-        position: fixed;
-        height: 100vh;
-        z-index: 10000;
+        z-index: 10000; /* High z-index to appear above other content */
+        overflow-y: auto; /* Allow scrolling if the content exceeds viewport height */
     }
 
+
     .navbar-menu.show {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        height: 100vh;
-        overflow-y: visible;
+        display: flex; /* Show the menu when toggled */
     }
 
     .navbar-menu a {
-        width: 90%;
-        height: 10vh;
+        width: 100%; /* Full width of the menu */
+        height: 10vh; /* Adjust as needed for spacing */
         display: block;
         text-align: center;
+        line-height: 10vh; /* Center text vertically */
     }
-
     .navbar-menu li {
         margin: 0;
         text-align: center;
