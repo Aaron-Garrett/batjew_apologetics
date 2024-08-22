@@ -202,7 +202,8 @@ section {
 
     #top {
         padding-top: 15vh;
-        max-width: 75vw;
+        min-width: 80vw;
+        max-width: 80vw;
         height: 125vh;
     }
 
@@ -263,8 +264,8 @@ section {
     .box img {
         min-width: 33vw;
         max-width: 33vw;
-        max-height: 7vh;
-        min-height: 7vh;
+        max-height: 15vh;
+        min-height: 15vh;
     }
     
     .image-container {
