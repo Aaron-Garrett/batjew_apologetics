@@ -177,8 +177,8 @@
         top: 0; /* Position at the top */
         left: 0; /* Align to the left */
         width: 100vw; /* Full viewport width */
-        height: 85vh; /* Full viewport height */
-        top: 15vh;
+        height: 80vh; /* Full viewport height */
+        top: 20vh;
         background-color: #3a84ef;
         z-index: 10000; /* High z-index to appear above other content */
         overflow-y: auto; /* Allow scrolling if the content exceeds viewport height */
@@ -208,6 +208,6 @@
         justify-content: center;
         position: relative;
         margin: 0 auto;
-        height: 10vh;
+        height: 5vh;
     }
 }
