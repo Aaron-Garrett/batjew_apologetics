@@ -182,11 +182,19 @@
         background-color: #3a84ef;
         z-index: 10000; /* High z-index to appear above other content */
         overflow-y: auto; /* Allow scrolling if the content exceeds viewport height */
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .navbar-menu.show {
+         opacity: 1;
+        display: flex; /* Show the menu when toggled */
     }
 
-
-    .navbar-menu.show {
-        display: flex; /* Show the menu when toggled */
+    .navbar-menu:not(.show) {
+        opacity: 0; /* Hide it when not visible */
+        display: none;
     }
 
     .navbar-menu a {
