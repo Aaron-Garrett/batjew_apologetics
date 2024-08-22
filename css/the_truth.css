@@ -193,16 +193,20 @@ section {
 @media (max-width: 480px) {
 
     .full {
-        width: 75vw;
+        max-width: 85vw;
+    }
+
+    .image-container {
+        max-width: 50vw;
     }
 
     .centered-container {
-        width: 65vw;
+        max-width: 50vw;
     }
 
     #top {
         padding-top: 15vh;
-        width: 75vw;
+        max-width: 50vw;
         height: 125vh;
     }
 
@@ -231,7 +235,7 @@ section {
     }
     
     .banded {
-        width: 65vw;
+        max-width: 50vw;
         font-size: clamp(24px, 3vh, 86px);
     }
     
@@ -255,20 +259,20 @@ section {
         align-items:center;
         justify-content: space-around;
         align-content: space-around;
-        width: 65vw;
+        max-width: 50vw;
         flex-wrap: wrap;
         max-height: 69vh;    
     }
     
     .box img {
-        min-width: 33vw;
-        max-width: 33vw;
+        min-width: 20vw;
+        max-width: 20vw;
         max-height: 7vh;
         min-height: 7vh;
     }
     
     .image-container {
-        max-width: 65vw;
+        max-width: 50vw;
         max-height: 33vh;
     }
     
