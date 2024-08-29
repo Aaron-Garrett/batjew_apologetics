@@ -220,16 +220,17 @@ section {
     .grey {
         /* background-color: rgb(95, 111, 125, .85); */
         background-color: rgb(72, 78, 82, .85);
-        width: 75vw;
+        width: 80vw;
     }
     
     .blue {
         background-color: rgb(23, 53, 80, .85);
-        width: 75vw;
+        width: 80vw;
     }
 
     section p {
         font-size: clamp(6px, 2vh, 60px);
+        width: 75vw;
     
     }
     
