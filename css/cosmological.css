@@ -378,7 +378,8 @@ footer {
     }
 
     .box img {
-        width: 45vw;
+        max-width: 43vw;
+        min-width: 43vw;
     }
 
     .growth h2 {
