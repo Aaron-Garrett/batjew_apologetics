@@ -208,8 +208,8 @@ section {
     }
 
     #top h2 {
-        min-width: 75vw;
-        max-width: 75vw;
+        min-width: 70vw;
+        max-width: 70vw;
     }
 
     .centered-container h3 {
@@ -255,6 +255,10 @@ section {
         text-align: center;
     }
     
+    .centered-container {
+        min-width: 70vw;
+        max-width: 70vw;
+    }
 
     .box {
         display: flex;
@@ -262,6 +266,7 @@ section {
         justify-content: space-around;
         align-content: space-around;
         max-width: 70vw;
+        min-width: 70vw;
         flex-wrap: wrap;
         max-height: 69vh;    
     }
