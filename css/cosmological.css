@@ -377,6 +377,9 @@ footer {
         font-size: clamp(7px, 5vh, 60px);
     }
 
+    .box img {
+        width: 45vw;
+    }
 
     .growth h2 {
         top: 5vh;
