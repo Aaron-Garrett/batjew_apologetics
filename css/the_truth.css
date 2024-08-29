@@ -199,6 +199,7 @@ section {
     cite {
         min-width: 70vw;
         max-width: 70vw;
+        font-size: clamp(3px, 1vh, 7px);
     }
 
     #top {
