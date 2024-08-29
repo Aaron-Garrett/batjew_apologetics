@@ -377,6 +377,10 @@ cite {
         min-height: 10vh;
     }
     
+    .overlay {
+        width: 40vw;
+    }
+
     .box {
         display: flex;
         align-items:center;
