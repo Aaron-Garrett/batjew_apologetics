@@ -473,7 +473,7 @@ cite {
         font-size: clamp(9px, 2vh, 36px);
         text-align: center;
         overflow-y: auto;
-        max-height: 60vh;
+        max-height: 55vh;
     }
 
     .close {
