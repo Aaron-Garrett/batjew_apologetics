@@ -432,6 +432,7 @@ footer {
 
     .overlay {
         font-size: clamp(7px, 2vh, 60px);
+        opacity: .3
     }
 
     #cosmohead {
