@@ -324,7 +324,7 @@ align-items: center;
     }
 
     #whatis {
-        font-size: clamp(7px, 2.vh, 24px);
+        font-size: clamp(7px, 2vh, 24px);
         margin-top: 2vh;
     }
 
