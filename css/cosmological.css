@@ -442,4 +442,8 @@ footer {
     #id h2 {
         padding-bottom: 5vh;
     }
+
+    .close {
+        padding-top: 21vh;
+    }
 }
