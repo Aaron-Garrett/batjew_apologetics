@@ -207,6 +207,11 @@ section {
         height: 125vh;
     }
 
+    #top h2 {
+        min-width: 75vw;
+        max-width: 75vw;
+    }
+
     .centered-container h3 {
         font-size: clamp(7px, 3vh, 60px);
     }
