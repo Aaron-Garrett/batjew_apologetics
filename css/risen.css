@@ -476,8 +476,8 @@ cite {
         max-height: 50vh;
     }
 
-    section {
-        padding-top: 18vh;
+    .close {
+        padding-top: 21vh;
     }
 
 }
