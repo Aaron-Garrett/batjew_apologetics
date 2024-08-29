@@ -203,6 +203,7 @@ section {
 
     #top {
         padding-top: 15vh;
+        padding-left: 0;
         min-width: 80vw;
         max-width: 80vw;
         height: 125vh;
