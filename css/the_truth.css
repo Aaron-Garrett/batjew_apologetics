@@ -196,8 +196,9 @@ section {
         max-width: 75vw;
     }
 
-    .centered-container {
-        max-width: 70vw;
+    cite {
+        min-width: 79vw;
+        max-width: 79vw;
     }
 
     #top {
@@ -208,8 +209,8 @@ section {
     }
 
     #top h2 {
-        min-width: 70vw;
-        max-width: 70vw;
+        min-width: 79vw;
+        max-width: 79vw;
     }
 
     .centered-container h3 {
@@ -256,8 +257,8 @@ section {
     }
     
     .centered-container {
-        min-width: 70vw;
-        max-width: 70vw;
+        min-width: 79vw;
+        max-width: 79vw;
     }
 
     .box {
@@ -265,21 +266,21 @@ section {
         align-items:center;
         justify-content: space-around;
         align-content: space-around;
-        max-width: 70vw;
-        min-width: 70vw;
+        max-width: 79vw;
+        min-width: 79vw;
         flex-wrap: wrap;
         max-height: 69vh;    
     }
     
     .box img {
-        min-width: 33vw;
-        max-width: 33vw;
+        min-width: 36vw;
+        max-width: 36vw;
         max-height: 15vh;
         min-height: 15vh;
     }
     
     .image-container {
-        max-width: 70vw;
+        max-width: 79vw;
         max-height: 33vh;
     }
     
