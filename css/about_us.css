@@ -56,6 +56,8 @@ section {
 @media (max-width: 480px) {
     p {
         font-size: clamp(9px, 2vh, 20px);
+        max-height: 50vw;
+        overflow-y: scroll;
     }
 
     img {
