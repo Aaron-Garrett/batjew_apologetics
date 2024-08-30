@@ -55,10 +55,10 @@ section {
 
 @media (max-width: 480px) {
     p {
-        font-size: clamp(9px, 2.5vh, 20px);
+        font-size: clamp(9px, 2vh, 20px);
     }
 
     img {
-        max-width: 40vw;
+        max-width: 50vw;
     }
 }
