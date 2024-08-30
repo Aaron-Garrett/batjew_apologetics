@@ -40,7 +40,6 @@ div {
 section {
     height: 100%;
     width: 100%;
-    font-size: clamp(24px, 5vh, 68px);
     align-items: center;
     align-content: center;
     align-self: center;
@@ -56,6 +55,6 @@ section {
 
 @media (max-width: 480px) {
     p {
-        font-size: clamp (9px, 5vh, 36px);
+        font-size: clamp (9px, 3vh, 20px);
     }
 }
