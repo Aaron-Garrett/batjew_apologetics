@@ -55,6 +55,6 @@ section {
 
 @media (max-width: 480px) {
     p {
-        font-size: clamp (9px, 3vh, 20px);
+        font-size: clamp(9px, 2.5vh, 20px);
     }
 }
