@@ -1,11 +1,10 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.querySelector('.navbar-toggle');
     const menu = document.querySelector('.navbar-menu');
 
-    function toggleMenu() {
+    toggleButton.addEventListener('click', function () {
         menu.classList.toggle('show');
-    }
-
-    toggleButton.addEventListener('click', toggleMenu);
-    toggleButton.addEventListener('touchend', toggleMenu);
+    });
 });

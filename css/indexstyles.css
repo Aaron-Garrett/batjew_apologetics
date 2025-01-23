@@ -324,7 +324,7 @@ align-items: center;
     }
 
     #whatis {
-        font-size: clamp(7px, 2vh, 24px);
+        font-size: clamp(7px, 1.5vh, 24px);
         margin-top: 2vh;
     }
 
@@ -357,13 +357,10 @@ align-items: center;
         font: Garamond;
     }
 
-    .image-container .overlay {
-        opacity: 1;
-    }
 
     #WhoFor span {
         font-family: Garamond, 'Times New Roman', Times, serif;
-        font-size: clamp(9px, 2.5vh, 60px);
+        font-size: clamp(9px, 2vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
         max-height: 90vh;
@@ -391,7 +388,7 @@ align-items: center;
 
     span {
         font-family: Garamond, 'Times New Roman', Times, serif;
-        font-size: clamp(9px, 2.5vh, 60px);
+        font-size: clamp(9px, 2vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
         max-height: 90vh;
@@ -416,7 +413,7 @@ align-items: center;
 
     .image-box {
         padding-top: 1vh;
-        display: block;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100vw;
