@@ -15,7 +15,7 @@
     padding: 12px;
 }
 
-.intro::before{
+/* .intro::before{
     content:"";
     background-image: url('background_images/homeheadbckrnd.jpg');
     background-size: 100% 100%;
@@ -26,7 +26,7 @@
     left: 0px;
     opacity: .7;
     padding-top: 120px;
-}
+} */
 
 .intro h1 {
     position: relative;
@@ -36,21 +36,22 @@
 
 .introduction{
     position: flex;
+    background-color:#0E202D;
     height: 100%;
     top: 50%;
 }
 
-.introduction::before{
+/* .introduction::before{
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color:black;
+    background-color:#0E202D;
     opacity: .48;
     height: 100%;
-}
+} */
 
 .introduction h1 {
     top: 36%;

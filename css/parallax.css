@@ -1,0 +1,71 @@
+/* Header styling */
+.header {
+    position: absolute; /* Position the header absolutely within the container */
+    left: 40vw;
+    text-align: center;
+    top: 60vh; /* Center the header vertically */
+    z-index: 5; /* Ensure it's above the parallax layers */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically within the border */
+    transition: transform 0.1s ease-out; /* Smooth transition as the header moves */
+}
+
+.header h1 {
+    font-family: 'Times New Roman';
+    font-size: 3vh; /* Adjust the font size as needed */
+    width: 20vw; /* Set a width for the border */
+    border: .5vw solid #0E202D;
+    padding: 1vh;
+}
+
+/* Parallax container setup */
+#parallax-container {
+    background-color: #0E202D;
+    position: relative;
+    width: 100vw;
+    height: 150vh; /* Set container height for scrolling */
+    top: 0; /* Ensure the parallax images start below the header */
+    overflow: hidden; /* Hide anything that overflows */
+}
+
+/* Parallax image layers */
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    transition: transform 0.1s ease-out; /* Smooth movement */
+}
+
+/* Additional z-indexing for proper stacking order */
+.parallax:nth-child(1) {
+    z-index: 1;
+}
+
+.parallax:nth-child(2) {
+    z-index: 2;
+}
+
+.parallax:nth-child(3) {
+    z-index: 3;
+}
+
+.parallax:nth-child(4) {
+    z-index: 4;
+}
+
+.parallax:nth-child(5) {
+    z-index: 5;
+}
+
+.parallax:nth-child(6) {
+    z-index: 6;
+}
+
+.parallax:nth-child(7) {
+    z-index: 7;
+}

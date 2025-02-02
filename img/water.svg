@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Water" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310.46 215.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="22.05" y="20.4" width="261.76" height="169.13"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="151.8" y1="78.92" x2="151.8" y2="35.74" gradientTransform="translate(-.07 203.97) rotate(.04) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9cc3de"/>
+      <stop offset="1" stop-color="#2f86ad"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-3">
+    <path class="cls-2" d="M278.84,123.84c-7.01.24-13.89,2.77-20.81,3.26-15.83,1.12-31.65-.52-47.53-.45-19.25.09-38.51-.83-57.76-.84-10.78,0-21.55-.06-32.32-.02-14.9.04-29.73-3.36-44.63-3.25-9.88.07-19.49,2.82-29.35,1.01-4.3-.79-8.85-.35-13.16.22-4.06.53-8.23,1.9-12.15,2.23-.04,0-.08.01-.12.02-.04,0-.07-.02-.11-.02-.38.04-.77.13-1.15.22v.45s0,4.49,0,4.49v17.4s-.02,13.52-.02,13.52v9.8s264.05.18,264.05.18l.02-26.68c0-3.35.04-6.71,0-10.06-.02-1.73-1.21-11.36-1.19-11.36-1.26-.13-2.52-.16-3.77-.12Z"/>
+  </g>
+</svg>

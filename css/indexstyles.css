@@ -109,7 +109,7 @@ section {
     align-content: center;
     align-self: center;
     vertical-align: middle;
-    padding-top: 12vh;
+    /* padding-top: 12vh; */
 }
 
 #earth {
@@ -190,7 +190,7 @@ section {
 
 #Existence {
     background-color: azure;
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
     height: 100vh;
     align-items: center;
 }
@@ -219,7 +219,7 @@ section {
 #NTEvid {
     background-color: floralwhite;
     height: 100vh;
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
     padding-left: 1.5%;
     align-items: center;
 }
@@ -236,7 +236,7 @@ section {
 #OurMission {
     background-color:floralwhite;
     height: 100vh;
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
     align-items: center;
 }
 
@@ -282,7 +282,7 @@ section {
 #WhoFor {
     background-color: azure;
     height: 100vh;
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
     align-items: center;
 }
 
@@ -300,7 +300,7 @@ section {
 
 #WhyImport {
 background-color: floralwhite;
-padding-top: 17vh;
+/* padding-top: 17vh; */
 height: 100vh;
 align-items: center;
 }
