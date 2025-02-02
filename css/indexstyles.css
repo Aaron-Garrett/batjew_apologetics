@@ -101,6 +101,11 @@ h3 {
     height: 50px;
 }
 
+.post-parallax {
+    transform: rotate(180deg);
+    height: 25vh;
+}
+
 section {
     height: 100%;
     width: 100%;
