@@ -14,8 +14,9 @@
 .header h1 {
     font-family: 'Times New Roman';
     font-size: 3vh; /* Adjust the font size as needed */
-    width: 20vw; /* Set a width for the border */
+    width: 33vw; /* Set a width for the border */
     border: .5vw solid #0E202D;
+    box-shadow: 2vw 2vw 2vw rgba(0, 0, 0, 0.3);
     padding: 1vh;
 }
 
