@@ -1,5 +1,5 @@
 body {
-    width:100%;
+    width: 100%;
 }
 
 p {
@@ -28,15 +28,15 @@ span {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
- }
+}
 
- .image-box {
+.image-box {
     padding-top: 7vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
- }
+}
 
 .box span {
     padding: 12px;
@@ -77,11 +77,11 @@ h3 {
 }
 
 .hold_list {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-.key_list{
+.key_list {
     font-weight: bolder;
     font-size: clamp(24px, 9vh, 68px);
     text-align: left;
@@ -102,8 +102,9 @@ h3 {
 }
 
 .post-parallax {
-    transform: rotate(180deg);
-    height: 25vh;
+    width: 100vw;
+    height: 100vh;
+    margin: -10vh;
 }
 
 section {
@@ -114,19 +115,18 @@ section {
     align-content: center;
     align-self: center;
     vertical-align: middle;
-    /* padding-top: 12vh; */
 }
 
 #earth {
     height: auto;
     max-height: 50vh;
-    float:right;
+    float: right;
 }
 
 #exist {
     width: auto;
     height: 65vh;
-    float:left;
+    float: left;
 }
 
 #exists {
@@ -169,7 +169,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
     color: white;
     width: 100%;
     height: 100%;
@@ -178,14 +179,17 @@ section {
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition effect */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition effect */
     font-size: clamp(12px, 3vh, 60px);
     text-align: center;
 }
 
 .image-container:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
+    /* Show overlay on hover */
 }
 
 #end {
@@ -195,7 +199,7 @@ section {
 
 #Existence {
     background-color: azure;
-    /* padding-top: 17vh; */
+    padding-top: 27vh;
     height: 100vh;
     align-items: center;
 }
@@ -216,7 +220,7 @@ section {
 #nt {
     width: auto;
     height: 65vh;
-    float:right;
+    float: right;
     padding-right: 2%;
     padding-bottom: 5%;
 }
@@ -224,24 +228,24 @@ section {
 #NTEvid {
     background-color: floralwhite;
     height: 100vh;
-    /* padding-top: 17vh; */
+    padding-top: 27vh;
     padding-left: 1.5%;
     align-items: center;
 }
 
 #NTEvid span {
     color: black;
-    align-content:center;
+    align-content: center;
 }
 
-#NTEvid h2{
+#NTEvid h2 {
     color: black;
 }
 
 #OurMission {
-    background-color:floralwhite;
+    background-color: floralwhite;
     height: 100vh;
-    /* padding-top: 17vh; */
+    padding-top: 27vh;
     align-items: center;
 }
 
@@ -249,21 +253,22 @@ section {
     color: black;
     margin-top: -5vh;
     max-height: 45vh;
-    align-content:center;
+    align-content: center;
     border: 3px black solid;
     margin-right: 9px;
 }
 
-#OurMission h2{
+#OurMission h2 {
     color: black;
 }
 
 #OurMission h3 {
-    color:#8B4513;
+    color: #8B4513;
     font-size: clamp(20px, 4.5vh, 68px);
     max-width: 100vw;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Add a subtle text shadow */
     text-decoration: underline;
     padding-bottom: 3vh;
 }
@@ -273,10 +278,10 @@ section {
     max-width: 50vw;
 }
 
-#science{
+#science {
     width: 100vh;
     height: auto;
-    float:right;
+    float: right;
 }
 
 
@@ -285,10 +290,12 @@ section {
 }
 
 #WhoFor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: azure;
     height: 100vh;
-    /* padding-top: 17vh; */
-    align-items: center;
+    padding-top: 27vh;
 }
 
 
@@ -304,13 +311,13 @@ section {
 }
 
 #WhyImport {
-background-color: floralwhite;
-/* padding-top: 17vh; */
-height: 100vh;
-align-items: center;
+    background-color: floralwhite;
+    padding-top: 27vh;
+    height: 100vh;
+    align-items: center;
 }
 
-#WhyImport h2{
+#WhyImport h2 {
     color: black;
 }
 
@@ -334,19 +341,21 @@ align-items: center;
     }
 
     #OurMission h3 {
-        color:#8B4513;
+        color: #8B4513;
         font-size: clamp(10px, 4vh, 24px);
         max-width: 100vw;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        /* Add a subtle text shadow */
         text-decoration: underline;
         padding-bottom: 3vh;
     }
+
     h1 {
         font-size: clamp(12px, 6vh, 60px);
         height: 9vh;
     }
-    
+
     h2 {
         font-size: clamp(11px, 3vh, 60px);
         color: navy;
@@ -354,7 +363,7 @@ align-items: center;
         padding-top: 10px;
         text-align: center;
     }
-    
+
     h3 {
         font-size: clamp(10px, 4vh, 60px);
         padding-top: 10px;
@@ -407,6 +416,7 @@ align-items: center;
         margin-right: auto;
         border: 3px black solid;
     }
+
     section {
         margin-left: 0;
         margin-right: 0;
@@ -425,9 +435,9 @@ align-items: center;
         justify-content: space-around;
         align-items: center;
         width: 100vw;
-     }
+    }
 
-     #exists img {
+    #exists img {
         height: 15vh;
         min-width: 100vw;
     }
@@ -437,11 +447,12 @@ align-items: center;
         min-width: 100vw;
     }
 
-     .overlay {
+    .overlay {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black background */
         color: white;
         width: 100%;
         height: 100%;
@@ -450,8 +461,10 @@ align-items: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
         justify-content: center;
         align-items: center;
-        opacity: 0; /* Initially hidden */
-        transition: opacity 0.3s ease; /* Smooth transition effect */
+        opacity: 0;
+        /* Initially hidden */
+        transition: opacity 0.3s ease;
+        /* Smooth transition effect */
         font-size: clamp(8px, 2vh, 56px);
         text-align: center;
     }
