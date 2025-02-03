@@ -279,7 +279,7 @@ section {
         font-size: clamp(9px, 2.5vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
-        max-height: 50vh;
+        max-height: 40vh;
         padding: 0 1vw;
         overflow-y: auto;
         margin: 0 auto;
