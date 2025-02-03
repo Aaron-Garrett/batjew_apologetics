@@ -25,19 +25,17 @@
 
 .introduction {
     background-image: url('../img/upside_down_trees.svg');
+    background-size: 120% !important;
+    width: 100vw;
+    background-position: center center !important;
     display: flex;
     background-color: floralwhite;
     padding-bottom: 5vh;
-    background-size: 120% !important;
-    width: 100vw !important;
-    background-position: center center !important;
     flex-direction: column;
     align-items: center;
 }
 
-.introduction h1,
-.introduction p {
-    /* background-color: rgba(255, 255, 255, 0.9); */
+.introduction h1, p {
     width: 50vw;
     margin: 0;
     text-align: center;
@@ -54,6 +52,7 @@
     overflow-y: auto;
     max-height: 45vh;
 }
+
 
 @media (max-width: 600px) {
     .intro {
