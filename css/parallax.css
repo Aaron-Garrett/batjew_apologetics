@@ -70,8 +70,8 @@
     z-index: 7;
 }
 
-@media (max-width: 480px) {
- #parallax-container {
+@media (max-width: 600px) {
+ #parallax {
         display: none; /* Hide parallax on small screens */
     }
 }
