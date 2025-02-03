@@ -5,32 +5,13 @@
     align-content: center;
 }
 
-.intro h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: #0E202D 2px solid;
-    box-shadow: 2vw 2vw 2vw rgba(0, 0, 0, 0.3);
-    padding: 12px;
-}
-
+.intro h1,
 .intro p {
-    font-family: Garamond, 'Times New Roman', Times, serif;
-    border: #0E202D 2px solid;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #0E202D;
     box-shadow: 2vw 2vw 2vw rgba(0, 0, 0, 0.3);
     padding: 12px;
 }
-
-/* .intro::before{
-    content:"";
-    background-image: url('background_images/homeheadbckrnd.jpg');
-    background-size: 100% 100%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: .7;
-    padding-top: 120px;
-} */
 
 .intro h1 {
     position: relative;
@@ -38,31 +19,21 @@
     font-size: 4rem;
 }
 
+.intro p {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+}
+
 .introduction {
-    /* margin-top: 5vh; */
     background-image: url('../img/upside_down_trees.svg');
     display: flex;
     background-color: floralwhite;
     padding-bottom: 5vh;
-    /* top: 50%; */
     background-size: 120% !important;
     width: 100vw !important;
     background-position: center center !important;
     flex-direction: column;
     align-items: center;
 }
-
-/* .introduction::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color:#0E202D;
-    opacity: .48;
-    height: 100%;
-} */
 
 .introduction h1,
 .introduction p {
@@ -85,7 +56,6 @@
 }
 
 @media (max-width: 600px) {
-
     .introduction {
         background-image: none;
     }
@@ -95,23 +65,23 @@
         background-image: url('background_images/homeheadbckrnd.jpg');
         background-size: 100% 100%;
         position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: .7;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.7;
         padding-top: 120px;
     }
 
     .introduction::before {
         content: "";
         position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         background-color: #0E202D;
-        opacity: .48;
+        opacity: 0.48;
         height: 100%;
     }
 
@@ -123,5 +93,4 @@
     .introduction p {
         top: 28vh;
     }
-
 }
