@@ -261,6 +261,20 @@ section {
         opacity: 1;
     }
 
+    #NTEvid, #OurMission, #WhyImport {
+        background: floralwhite;
+        align-items: center;
+        padding-top: 5vh;
+        height: 100vh;
+    }
+    
+    #WhoFor, #Existence {
+        padding-top: 5vh;
+        align-items: center;
+        background: lightblue;
+        height: 100vh;
+    }
+
     #WhoFor span, #OurMission span, span {
         font-size: clamp(9px, 2.5vh, 60px);
         min-width: 80vw;

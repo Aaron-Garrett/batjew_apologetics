@@ -58,6 +58,16 @@
 @media (max-width: 600px) {
     .introduction {
         background-image: none;
+        background-color: none;
+    }
+
+    .introduction h1 {
+        top: 2vh;
+    }
+
+    .introduction h1,
+    p {
+        color: floralwhite;
     }
 
     .intro::before {

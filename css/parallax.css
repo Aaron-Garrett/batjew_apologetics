@@ -69,3 +69,9 @@
     justify-content: center;
     align-items: center; /* Center the text vertically within the border */
 }
+
+@media (max-width: 600px) {
+    #parallax {
+        display: none; /* Hide parallax effect on small screens */
+    }
+}
