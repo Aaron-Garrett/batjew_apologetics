@@ -292,13 +292,13 @@ section {
         font-size: clamp(9px, 2.5vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
-        max-height: 45vh;
+        max-height: 50vh;
         padding: 1vh 1vw;
         overflow-y: auto;
         margin: 0 auto;
         border: 3px solid black;
         text-align: center;
-        margin-top: 2.5vh;
+        margin-top: 2vh;
     }
 
     .box img {
