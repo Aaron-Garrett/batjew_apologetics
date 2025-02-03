@@ -49,9 +49,9 @@
 .header {
     position: absolute; /* Position the header absolutely within the container */
     text-align: center;
-    top: 50vh; /* Center the header vertically */
-    left: 35vw; /* Center the header horizontally */
-    z-index: 5; /* Ensure it's above the parallax layers */
+    top: 52.5vh; /* Center the header vertically */
+    left: 27%; /* Center the header horizontally */
+    z-index: 3; /* Ensure it's above the parallax layers */
     display: flex;
     justify-content: center;
     align-items: center; /* Center the text vertically within the border */
@@ -62,7 +62,7 @@
     font-family: 'Brush Script MT', cursive; /* Use a web-safe cursive font */
     font-size: 5vh; /* Adjust the font size as needed */
     height: 10vh; /* Set a height for the border */
-    width: 33vw; /* Set a width for the border */
+    width: 45vw; /* Set a width for the border */
     border: 0.5vw solid #0E202D;
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
