@@ -264,12 +264,12 @@ section {
     #NTEvid, #OurMission, #WhyImport {
         background: floralwhite;
         align-items: center;
-        padding-top: 5vh;
+        padding-top: 27vh;
         height: 100vh;
     }
     
     #WhoFor, #Existence {
-        padding-top: 5vh;
+        padding-top: 27vh;
         align-items: center;
         background: lightblue;
         height: 100vh;
@@ -284,6 +284,14 @@ section {
         overflow-y: auto;
         margin: 0 auto;
         border: 3px solid black;
+        text-align: center;
+        margin-top: 2.5vh;
+    }
+
+    #WhoFor span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .box img {
@@ -303,4 +311,10 @@ section {
     .overlay {
         font-size: clamp(8px, 2vh, 56px);
     }
-}
+
+    span {
+        overflow-y: scroll;
+        height: 50vh;
+        text-align: center;
+        padding-top: 5vh;
+    }

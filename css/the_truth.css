@@ -190,7 +190,7 @@ section {
     padding-bottom: 5vh;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .full {
         max-width: 75vw;

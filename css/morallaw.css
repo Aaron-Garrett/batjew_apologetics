@@ -169,7 +169,7 @@ section {
     padding-bottom: 5vh;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .grey {
         /* background-color: rgb(95, 111, 125, .85); */

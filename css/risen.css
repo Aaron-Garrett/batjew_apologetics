@@ -369,7 +369,7 @@ cite {
     height: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .box img {
         min-width: 40vw;

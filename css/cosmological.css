@@ -372,7 +372,7 @@ footer {
     align-self: start;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .cosmological {
         font-size: clamp(7px, 5vh, 60px);
     }

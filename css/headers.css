@@ -37,7 +37,7 @@
 
 .introduction h1,
 .introduction p {
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
     width: 50vw;
     margin: 0;
     text-align: center;
@@ -56,51 +56,87 @@
 }
 
 @media (max-width: 600px) {
-    .introduction {
-        background-image: none;
-        background-color: none;
+    .intro {
+        position: relative;
+        width:auto;
+        align-items: center;
+        align-content: center;
     }
 
     .introduction h1 {
-        top: 2vh;
-    }
-
-    .introduction h1,
-    p {
-        color: floralwhite;
-    }
-
-    .intro::before {
-        content: "";
-        background-image: url('background_images/homeheadbckrnd.jpg');
-        background-size: 100% 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0.7;
-        padding-top: 120px;
-    }
-
-    .introduction::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #0E202D;
-        opacity: 0.48;
-        height: 100%;
-    }
-
-    .introduction h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
         top: 20vh;
         font-size: clamp(12px, 7vh, 68px);
     }
 
     .introduction p {
         top: 28vh;
+        font-family: Garamond, 'Times New Roman', Times, serif;
+        border: white 2px solid;
+        padding: 12px;
+    }
+    
+    .intro::before{
+        content:"";
+        background-image: url('background_images/homeheadbckrnd.jpg');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .7;
+        padding-top: 120px;
+    }
+    
+    .intro h1 {
+        position: relative;
+        color: white;
+        font-size: 4rem;
+    }
+    
+    .introduction{
+        background-image: none;
+        position: flex;
+        height: 100%;
+        top: 50%;
+    }
+    
+
+
+    .introduction::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color:black;
+        opacity: .48;
+        height: 100%;
+    }
+    
+    .introduction h1 {
+        top: 20vh;
+        width: 90vw;
+        border: white 2px solid;
+        height: 15vh;
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .introduction p{
+        top: 15vh;
+        width: 90vw;
+        position: relative;
+        margin: 25px;
+        color: white;
+        font-size: 2vh;
+        text-align: center;
+        overflow-y: auto;
+        max-height: 45vh;
     }
 }
