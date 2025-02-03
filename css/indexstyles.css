@@ -288,6 +288,24 @@ section {
         margin-top: 2.5vh;
     }
 
+    /* Subtle scrollbar styling */
+    span::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    span::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    span::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    span::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
     #WhoFor span, #WhyImport span, #WhoFor span {
         display: flex;
         justify-content: center;

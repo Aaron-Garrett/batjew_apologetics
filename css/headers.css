@@ -63,12 +63,6 @@
         align-content: center;
     }
 
-    .introduction h1 {
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        top: 20vh;
-        font-size: clamp(12px, 7vh, 68px);
-    }
-
     .introduction p {
         top: 28vh;
         font-family: Garamond, 'Times New Roman', Times, serif;
@@ -87,12 +81,6 @@
         left: 0px;
         opacity: .7;
         padding-top: 120px;
-    }
-    
-    .intro h1 {
-        position: relative;
-        color: white;
-        font-size: 4rem;
     }
     
     .introduction{
@@ -117,7 +105,11 @@
     }
     
     .introduction h1 {
+        position: relative;
+        color: white;
+        font-family:Georgia, 'Times New Roman', Times, serif;
         top: 20vh;
+        font-size: clamp(12px, 4vh, 68px);
         width: 90vw;
         border: white 2px solid;
         height: 15vh;
@@ -134,7 +126,7 @@
         position: relative;
         margin: 25px;
         color: white;
-        font-size: 2vh;
+        font-size: clamp(10px, 2vh, 50px);
         text-align: center;
         overflow-y: auto;
         max-height: 45vh;
