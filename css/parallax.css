@@ -1,47 +1,26 @@
-/* Header styling */
-.header {
-    position: absolute; /* Position the header absolutely within the container */
-    left: 40vw;
-    text-align: center;
-    top: 60vh; /* Center the header vertically */
-    z-index: 5; /* Ensure it's above the parallax layers */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center the text vertically within the border */
-    transition: transform 0.1s ease-out; /* Smooth transition as the header moves */
-}
-
-.header h1 {
-    font-family: 'Times New Roman';
-    font-size: 3vh; /* Adjust the font size as needed */
-    width: 20vw; /* Set a width for the border */
-    border: .5vw solid #0E202D;
-    padding: 1vh;
-}
-
 /* Parallax container setup */
 #parallax-container {
     background-color: #0E202D;
     position: relative;
-    width: 100vw;
-    height: 150vh; /* Set container height for scrolling */
-    top: 0; /* Ensure the parallax images start below the header */
-    overflow: hidden; /* Hide anything that overflows */
+    width: 100vw;      /* Full viewport width */
+    height: 150vh;     /* Full viewport height */
+    top: 0;            /* No space above */
+    overflow: hidden;  /* Hide anything that overflows */
 }
 
 /* Parallax image layers */
 .parallax {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
+    width: 100%;       /* Full width */
+    height: 100%;      /* Full height */
+    background-size: cover;     /* Ensure images cover the full container */
+    background-position: center center;  /* Keep the image centered */
     top: 0;
     left: 0;
     transition: transform 0.1s ease-out; /* Smooth movement */
 }
 
-/* Additional z-indexing for proper stacking order */
+/* Optional: adjust z-index to ensure proper layering */
 .parallax:nth-child(1) {
     z-index: 1;
 }
@@ -66,12 +45,27 @@
     z-index: 6;
 }
 
-.parallax:nth-child(7) {
-    z-index: 7;
+/* Header styling */
+.header {
+    position: absolute; /* Position the header absolutely within the container */
+    text-align: center;
+    top: 50vh; /* Center the header vertically */
+    left: 35vw; /* Center the header horizontally */
+    z-index: 5; /* Ensure it's above the parallax layers */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically within the border */
+    transition: transform 0.1s ease-out; /* Smooth transition as the header moves */
 }
 
-@media (max-width: 600px) {
- #parallax {
-        display: none; /* Hide parallax on small screens */
-    }
+.header h1 {
+    font-family: 'Brush Script MT', cursive; /* Use a web-safe cursive font */
+    font-size: 5vh; /* Adjust the font size as needed */
+    height: 10vh; /* Set a height for the border */
+    width: 33vw; /* Set a width for the border */
+    border: 0.5vw solid #0E202D;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically within the border */
 }

@@ -39,11 +39,12 @@
 }
 
 .introduction {
+    /* margin-top: 5vh; */
     background-image: url('../img/upside_down_trees.svg');
     display: flex;
-    background-color: azure;
-    height: 100%;
-    top: 50%;
+    background-color: floralwhite;
+    padding-bottom: 5vh;
+    /* top: 50%; */
     background-size: 120% !important;
     width: 100vw !important;
     background-position: center center !important;
