@@ -168,13 +168,11 @@ section {
 #NTEvid, #OurMission, #WhyImport {
     background: linear-gradient(to bottom, floralwhite 10%, lightblue);
     align-items: center;
-    justify-content: center;
     padding-top: 5vh;
 }
 
 #WhoFor, #Existence {
     padding-top: 5vh;
-    justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, lightblue 10%, floralwhite);
 }
@@ -266,22 +264,32 @@ section {
     #NTEvid, #OurMission, #WhyImport {
         background: floralwhite;
         align-items: center;
-        justify-content: center;
+        padding-top: 27vh;
         height: 100vh;
     }
     
     #WhoFor, #Existence {
+        padding-top: 27vh;
         align-items: center;
-        justify-content: center;
         background: lightblue;
         height: 100vh;
     }
+    
+    /* Subtle scrollbar styling */
+    span::-webkit-scrollbar {
+        width: 8px;
+    }
 
-    #WhoFor span, #WhyImport span, #WhoFor span {
+    span::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    #WhoFor span, #WhyImport span, #OurMission span {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: clamp(9px, 1.5vh, 60px);
+        font-size: clamp(9px, 2.5vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
         max-height: 45vh;
