@@ -279,7 +279,7 @@ section {
         font-size: clamp(9px, 2.5vh, 60px);
         min-width: 80vw;
         max-width: 80vw;
-        max-height: 90vh;
+        max-height: 50vh;
         padding: 0 1vw;
         overflow-y: auto;
         margin: 0 auto;
@@ -288,7 +288,7 @@ section {
         margin-top: 2.5vh;
     }
 
-    #WhoFor span {
+    #WhoFor span, #WhyImport span, #WhoFor span {
         display: flex;
         justify-content: center;
         align-items: center;
