@@ -240,7 +240,7 @@ section {
     }
 
     #OurMission h3 {
-        font-size: clamp(10px, 4vh, 24px);
+        font-size: clamp(10px, 3vh, 24px);
     }
 
     h1 {
@@ -289,9 +289,9 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: clamp(9px, 2.5vh, 60px);
+        font-size: clamp(9px, 1.5vh, 60px);
         min-width: 80vw;
-        max-width: 90vw;
+        max-width: 80vw;
         max-height: 45vh;
         padding: 1vh 1vw;
         overflow-y: auto;
@@ -321,7 +321,4 @@ section {
 
     span {
         overflow-y: scroll;
-        height: 50vh;
-        text-align: center;
-        padding-top: 5vh;
     }
