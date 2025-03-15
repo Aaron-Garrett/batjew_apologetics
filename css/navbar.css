@@ -50,15 +50,24 @@
     height: 7vh;
 }
 
+/* Reset navbar menu width and padding */
 .navbar-menu {
     margin: 0;
+    padding: 0;
     width: 100vw;
     display: flex;
     justify-content: space-between;
 }
 
+/* Adjust nav item widths */
+.navbar-menu > div,
+.navbar-menu > div > a,
+#evidence, #nt, #modern,
+.nav-item {
+    width: 25vw;  /* Change from 33.33vw back to 25vw */
+}
+
 .navbar-menu>div {
-    width: 33.33vw;
     height: 12vh;
     position: relative;
     color: white;
@@ -81,13 +90,12 @@
     -webkit-text-stroke: none;
     font-weight: normal;
     background-size: 100% 100%;
-    width: 33.33vw;
     height: 12vh;
 }
 
 .navbar a {
     float: top;
-    width: 33.33vw;
+    width: 25vw;
     height: auto;
     float: left;
     text-align: center;
@@ -102,7 +110,6 @@
 }
 
 .nav-item {
-    width: 33.33vw;
     float: left;
     height: 99%;
 }
@@ -210,7 +217,7 @@
 #evidence {
     cursor: pointer;
     position: relative;
-    width: 33.33vw;
+    width: 25vw;
     height: 15vh;
     float: left;
     text-align: center;
@@ -260,7 +267,7 @@
 #nt {
     cursor: pointer;
     position: relative;
-    width: 33.33vw;
+    width: 25vw;
     height: 15vh;
     float: left;
     text-align: center;
@@ -274,7 +281,7 @@
     float: top;
     color: white;
     font-size: medium;
-    width: 33.33vw;
+    width: 25vw;
     height: 15vh;
     float: left;
     text-align: center;
@@ -304,7 +311,7 @@
 #modern {
     cursor: pointer;
     position: relative;
-    width: 33.33vw;
+    width: 25vw;
     height: 15vh;
     float: left;
     text-align: center;
@@ -318,7 +325,7 @@
     float: top;
     color: white;
     font-size: medium;
-    width: 33.33vw;
+    width: 25vw;
     height: 15vh;
     float: left;
     text-align: center;
@@ -465,7 +472,7 @@
 
     #evidence > a, #nt > a, #modern > a {
         width: 100vw;
-        height: 100%;
+        height: 33.33%;
         display: flex;
         align-items: center;
         justify-content: center;
