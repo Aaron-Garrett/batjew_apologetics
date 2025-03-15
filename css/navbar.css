@@ -431,7 +431,7 @@
         /* Align with bottom of header */
         left: 0;
         width: 100vw;
-        height: calc(100vh - 27vh);
+        height: 73vh;
         /* Take up remaining viewport height */
         background-color: #3a84ef;
         z-index: 1001;
