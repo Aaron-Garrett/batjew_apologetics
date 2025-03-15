@@ -89,29 +89,17 @@
 
     #whatis {
         background: none;
-    };
-    
-    .intro::before{
-        content:"";
-        background-image: url('background_images/homeheadbckrnd.jpg');
-        background-size: 100% 100%;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: .7;
-        padding-top: 120px;
+        font-size: clamp(16px, 2vh, 68px);
     }
+
     
     .introduction{
-        background-image: none;
+        background-image: url('background_images/homeheadbckrnd.jpg');
+        background-size: cover !important;
         position: flex;
         height: 100%;
         top: 50%;
     }
-    
-
 
     .introduction::before{
         content: "";
@@ -121,7 +109,7 @@
         bottom: 0px;
         left: 0px;
         background-color: black;
-        opacity: .48;
+        opacity: .6;
         height: 100%;
     }
     
