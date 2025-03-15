@@ -472,7 +472,7 @@
 
     #evidence > a, #nt > a, #modern > a {
         width: 100vw;
-        height: 33.33%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
