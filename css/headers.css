@@ -82,6 +82,8 @@
         top: 28vh;
         font-family: Garamond, 'Times New Roman', Times, serif;
         border: white 2px solid;
+        background-color: none;
+        background: none;
         padding: 12px;
     }
     
