@@ -6,10 +6,10 @@
 }
 
 .screenTop {
-    position:fixed;
+    position: fixed;
     background-color: #3a84ef;
-    width:100%;
-    justify-content:center;
+    width: 100%;
+    justify-content: center;
     z-index: 100;
 }
 
@@ -21,7 +21,7 @@
     height: 16vh;
 }
 
-#headerPic{
+#headerPic {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -38,7 +38,7 @@
     height: 12vh;
     display: flex;
     justify-content: space-between;
-    overflow:hidden;
+    overflow: hidden;
     width: 100vw;
 }
 
@@ -51,34 +51,63 @@
 }
 
 .navbar-menu {
-    margin: 0px;
+    margin: 0;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu>div {
+    width: 33.33vw;
+    height: 12vh;
+    position: relative;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    -webkit-text-stroke: none;
+    font-weight: normal;
+}
+
+.navbar-menu>div>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    -webkit-text-stroke: none;
+    font-weight: normal;
+    background-size: 100% 100%;
+    width: 33.33vw;
+    height: 12vh;
 }
 
 .navbar a {
     float: top;
-    color: white;
-    font-size: medium;
-    width: 14%;
+    width: 33.33vw;
     height: auto;
     float: left;
     text-align: center;
-    line-height: 120px;
     vertical-align: middle;
+    height: 99%;
+    color: white;
+    font-size: medium;
     text-decoration: none;
+    -webkit-text-stroke: none;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+.nav-item {
+    width: 33.33vw;
+    float: left;
     height: 99%;
 }
 
-.home a:hover{
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    -webkit-text-stroke: .35px black;
-    background-image: url('./background_images/homelink.jpg');
-    background-size: 100% 100%;
-}
-
-.cosmo:hover{
+.cosmo:hover {
     font-weight: bold;
     font-size: 15px;
     color: white;
@@ -87,7 +116,7 @@
     background-size: 100% 100%;
 }
 
-.cosmo a:hover{
+.cosmo a:hover {
     font-weight: bold;
     font-size: 15px;
     color: white;
@@ -96,7 +125,7 @@
     background-size: 100% 100%;
 }
 
-.intdes a:hover{
+.intdes a:hover {
     font-weight: bold;
     font-size: 15px;
     color: white;
@@ -105,7 +134,7 @@
     background-size: 100% 100%;
 }
 
-.morallaw a:hover{
+.morallaw a:hover {
     font-weight: bold;
     font-size: 15px;
     color: white;
@@ -114,7 +143,7 @@
     background-size: 100% 100%;
 }
 
-.reliability a:hover{
+.reliability a:hover {
     font-weight: bold;
     font-size: 15px;
     color: black;
@@ -123,7 +152,7 @@
     background-size: 100% 100%;
 }
 
-.truth a:hover{
+.truth a:hover {
     font-weight: bold;
     font-size: 15px;
     color: black;
@@ -133,15 +162,7 @@
     background-size: 100% 100%;
 }
 
-/*.rise a {
-    transition: width 100ms;
-    transition-timing-function: linear;
-}*/
-
-.rise a:hover{
-  /*  z-index: 1001;
-    width: 35%;
-    position:absolute; */
+.rise a:hover {
     font-weight: bold;
     font-size: 15px;
     color: black;
@@ -149,7 +170,34 @@
     background-image: url('./background_images/riselink.gif');
     background-size: 100% 100%;
 }
- 
+
+.evolution a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    -webkit-text-stroke: .35px white;
+    background-image: url('./background_images/evolution_background.jpg');
+    background-size: 100% 100%;
+}
+
+.abortion a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    -webkit-text-stroke: .35px white;
+    background-image: url('./background_images/fetus_background.jpg');
+    background-size: 100% 100%;
+}
+
+.homosexuality a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    -webkit-text-stroke: .35px white;
+    background-image: url('./background_images/homosexuality_background.jpg');
+    background-size: 100% 100%;
+}
+
 .navbar-toggle {
     display: none;
     background: none;
@@ -159,63 +207,320 @@
     cursor: pointer;
 }
 
+#evidence {
+    cursor: pointer;
+    position: relative;
+    width: 33.33vw;
+    height: 15vh;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    line-height: 120px;
+    vertical-align: middle;
+}
+
+#evidence:hover {
+    font-size: 15px;
+    background-image: none;
+}
+
+#evidence>a {
+    float: top;
+    color: white;
+    font-size: medium;
+    width: 100%;
+    height: 99%;
+    float: left;
+    text-align: center;
+    line-height: 120px;
+    text-decoration: none;
+    display: block;
+}
+
+#evidence>a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    -webkit-text-stroke: .35px black;
+    background-image: url('./background_images/landscape.jpg');
+    background-size: 100% 100%;
+}
+
+.evidence-dropdown.show {
+    display: flex;
+    /* Changed from block to flex */
+    justify-content: center;
+}
+
+.evidence-dropdown div {
+    width: 33.33%;
+}
+
+#nt {
+    cursor: pointer;
+    position: relative;
+    width: 33.33vw;
+    height: 15vh;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    line-height: 120px;
+    vertical-align: middle;
+}
+
+#nt>a {
+    float: top;
+    color: white;
+    font-size: medium;
+    width: 33.33vw;
+    height: 15vh;
+    float: left;
+    text-align: center;
+    line-height: 120px;
+    text-decoration: none;
+    display: block;
+}
+
+#nt>a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    -webkit-text-stroke: .35px black;
+    background-image: url('./background_images/nt.jpg');
+    background-size: 100% 100%;
+}
+
+.nt-dropdown.show {
+    display: flex;
+    justify-content: center;
+}
+
+.nt-dropdown div {
+    width: 33.33%;
+}
+
+#modern {
+    cursor: pointer;
+    position: relative;
+    width: 33.33vw;
+    height: 15vh;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    line-height: 120px;
+    vertical-align: middle;
+}
+
+#modern>a {
+    float: top;
+    color: white;
+    font-size: medium;
+    width: 33.33vw;
+    height: 15vh;
+    float: left;
+    text-align: center;
+    line-height: 120px;
+    text-decoration: none;
+    display: block;
+}
+
+#modern>a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    -webkit-text-stroke: .35px black;
+    background-image: url('./background_images/modern_background.jpg');
+    background-size: 100% 100%;
+}
+
+.modern-dropdown.show {
+    display: flex;
+    /* Changed from block to flex */
+    justify-content: center;
+}
+
+/* Remove any conflicting background styles */
+#evidence:hover,
+#nt:hover,
+#nt.active {
+    background-image: none;
+}
+
+/* Update dropdown display logic to use hover */
+#evidence:hover .evidence-dropdown,
+#nt:hover .nt-dropdown,
+#modern:hover .modern-dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+.modern-dropdown>div {
+    width: 33.33vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Remove .show classes as they're no longer needed */
+.evidence-dropdown,
+.nt-dropdown,
+.modern-dropdown {
+    display: none;
+    position: fixed;
+    top: 27vh;
+    left: 0;
+    height: 15vh;
+    width: 100vw;
+    background-color: #3a84ef;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Common styles for all dropdown items */
+.evidence-dropdown a,
+.nt-dropdown a,
+.modern-dropdown a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+}
+
+/* Common hover styles for all dropdown items */
+.evidence-dropdown a:hover,
+.nt-dropdown a:hover,
+.modern-dropdown a:hover {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    -webkit-text-stroke: .35px black;
+}
+
 /* Styles for mobile devices (e.g., phones) */
 @media (max-width: 600px) {
-    .navbar {
-        /* Remove unnecessary styles */
-        justify-content: space-between;
-        align-content: center;
+    .navbar-toggle {
         display: flex;
-        overflow: hidden; /* Hide any overflow */
-        height: auto; /* Allow height to adjust based on content */
-        overflow: hidden; /* Hide any overflowing content */        
+        justify-content: center;
+        width: 100vw;
+        height: 5vh;
     }
+
+    .navbar-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
     .navbar-menu {
         display: none;
-        flex-direction: column;
-        position: fixed; /* Ensure it stays fixed to the viewport */
-        top: 0; /* Position at the top */
-        left: 0; /* Align to the left */
-        width: 100vw; /* Full viewport width */
-        height: 80vh; /* Full viewport height */
-        top: 20vh;
+        position: fixed;
+        top: 27vh;
+        /* Align with bottom of header */
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 27vh);
+        /* Take up remaining viewport height */
         background-color: #3a84ef;
-        z-index: 10000; /* High z-index to appear above other content */
-        overflow-y: auto; /* Allow scrolling if the content exceeds viewport height */
+        z-index: 1001;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .navbar-menu.hidden {
+        opacity: 0;
+        visibility: hidden;
+        display: flex !important;
+        pointer-events: none;
+    }
+
+    #evidence, #nt, #modern {
+        width: 100vw;
+        height: 33.33vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #evidence > a, #nt > a, #modern > a {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    /* Disable hover effects on mobile */
+    #evidence:hover .evidence-dropdown,
+    #nt:hover .nt-dropdown,
+    #modern:hover .modern-dropdown {
         display: none;
+    }
+
+    .evidence-dropdown,
+    .nt-dropdown,
+    .modern-dropdown {
+        position: fixed;
+        top: 27vh;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 27vh);
+        background-color: #3a84ef;
+        z-index: 1002;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         opacity: 0;
         transition: opacity 0.3s ease;
     }
-    
-    .navbar-menu.show {
-         opacity: 1;
-        display: flex; /* Show the menu when toggled */
-    }
 
-    .navbar-menu:not(.show) {
-        opacity: 0; /* Hide it when not visible */
-        display: none;
-    }
-
-    .navbar-menu a {
-        width: 100%; /* Full width of the menu */
-        height: 10vh; /* Adjust as needed for spacing */
-        display: block;
-        text-align: center;
-        line-height: 10vh; /* Center text vertically */
-    }
-    .navbar-menu li {
-        margin: 0;
-        text-align: center;
-        height: 10vh;
-    }
-
-    .navbar-toggle {
+    .evidence-dropdown.submenu-active,
+    .nt-dropdown.submenu-active,
+    .modern-dropdown.submenu-active {
         display: flex;
-        flex-direction: column;
+        opacity: 1;
+        z-index: 1002;
+    }
+
+    .evidence-dropdown > div,
+    .nt-dropdown > div,
+    .modern-dropdown > div {
+        width: 100vw;
+        height: 33.33%;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        position: relative;
-        margin: 0 auto;
-        height: 5vh;
+    }
+
+    .back-button {
+        background-color: #3a84ef;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        z-index: 1003; /* Ensure it's above other elements */
     }
 }

@@ -1,0 +1,236 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #454545;
+  }
+
+ 
+p {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: clamp(12px, 3.5vw, 48px);
+}
+
+h2 {
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: clamp(18px, 6vw, 86px);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.body {
+    padding: 1.5vw;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: clamp(12px, 4vw, 48px);
+    height: 100vh;
+    padding-top: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    height: 90vh;
+    padding-top: 12vh;
+}
+
+.science {
+    width: 80vw;
+}
+
+.citation {
+    font-size: clamp(8px, 1.5vw, 24px);
+    vertical-align: super;
+}
+
+.flip-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25vw;
+    margin-right: 1vw; 
+    height: 45vh;
+    perspective: 1000px;
+    cursor: pointer;
+    background-color: #d5c9c9;
+    border: 0.5vw ridge #5c5c5c;
+    box-shadow: 12px 12px 18px rgba(213, 201, 201, 0.8);
+}
+
+.flip-card p {
+    font-size: clamp(12px, 3.5vw, 48px);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card.first::after {
+    content: "click to flip";
+}
+
+.flip-card.first.flipped::after {
+    content: "click to flip back";
+}
+
+.flip-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;  /* covers entire card */
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 80%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: clamp(8px, 1.5vh, 16px);
+    font-family: Arial, sans-serif;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.flip-card.flipped::after {
+    content: "";
+    position: absolute;
+    inset: 0;  /* covers entire card */
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 80%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: clamp(8px, 1.5vh, 16px);
+    font-family: Arial, sans-serif;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.flip-card-front p, .flip-card-back p {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flip-card a.citation {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flip-card-front a.citation:hover, .flip-card-back a.citation:hover {
+    text-decoration: underline;
+}
+
+.information-section {
+    margin: 20px 0;
+    width: 85vw;
+    min-height: 100px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;  /* default - items flow left to right */
+    justify-content: space-around;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.information-section::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.summary {
+    background-color: #d5c9c9;
+    border: 0.5vw ridge #5c5c5c;
+    box-shadow: 12px 12px 18px rgba(213, 201, 201, 0.8);
+    padding: 1.5vw;
+    width: 85vw;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+@media (max-width: 600px) {
+
+    .information-section {
+        align-items: space-between;
+        width: 100vw;
+    }
+
+    .flip-card {
+        min-width: 85vw;
+        height: 90%;
+        margin: 1.5%; /* Remove right margin on small screens */
+    }
+
+    .flip-card-inner {
+        width: 85vw;
+        height: 95%;
+    }
+
+    .body {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .body h2 {
+        margin-top: 4vh;
+    }
+
+    .science, .summary {
+        width: 95vw;
+        margin: 2vh auto;
+    }
+
+    .information-section {
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}

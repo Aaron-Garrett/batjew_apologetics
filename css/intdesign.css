@@ -19,6 +19,15 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1.banded {
+    background-color: rgb(251, 243, 224);
+    color: #173550;
+    opacity: 1;
+    font-weight: bold;
+    width: 100%;
+    font-size: clamp(28px, 5vh, 86px);
+}
+
 .banded {
     background-color:rgb(251, 243, 224);
     color: #173550;

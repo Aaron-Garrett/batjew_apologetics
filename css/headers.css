@@ -24,6 +24,7 @@
 }
 
 .introduction {
+    position: relative;  /* Add this to create stacking context */
     background-image: url('../img/upside_down_trees.svg');
     background-size: 120% !important;
     width: 100vw;
@@ -33,6 +34,7 @@
     padding-bottom: 5vh;
     flex-direction: column;
     align-items: center;
+    z-index: 1;  /* Lower z-index for background */
 }
 
 .introduction h1, p {
@@ -53,6 +55,20 @@
     max-height: 45vh;
 }
 
+.introduction h1,
+.introduction p {
+    position: relative;  /* Add this to lift above background */
+    z-index: 2;  /* Higher z-index to appear above background */
+}
+
+#whatis {
+    background-color: floralwhite;  /* Optional: add slight white background for better readability */
+    margin: 20px;
+    border-radius: 8px;  /* Optional: rounded corners */
+    font-size: clamp(16px, 3vh, 68px);
+    z-index: 7;
+    height: auto;
+}
 
 @media (max-width: 600px) {
     .intro {
