@@ -457,7 +457,7 @@
 
     #evidence, #nt, #modern {
         width: 100vw;
-        height: 33.33vh;
+        height: 33.33%;
         display: flex;
         align-items: center;
         justify-content: center;
