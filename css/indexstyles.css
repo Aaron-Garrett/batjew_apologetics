@@ -212,10 +212,6 @@ section {
     float: right;
 }
 
-#whatis {
-    font-size: clamp(16px, 3vh, 68px);
-}
-
 /* Styles for mobile devices (e.g., phones) */
 @media (max-width: 600px) {
     html, body {
@@ -322,3 +318,4 @@ section {
     span {
         overflow-y: scroll;
     }
+}

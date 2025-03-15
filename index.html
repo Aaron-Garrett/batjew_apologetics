@@ -3,39 +3,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="css/navbar.css" rel="stylesheet" type="text/css">
     <link href="css/indexstyles.css" rel="stylesheet" type="text/css">
-    <link href="css/headers.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/snapscroll.css" rel="stylesheet" type="text/css"> -->
-    <link href="css/footer.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/snapscroll.css" rel="stylesheet" type="text/css"> -->
     <link href="css/parallax.css" rel="stylesheet" type="text/css">
+    <link href="css/headers.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
     <script src="js/navtoggle.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="js/parallax-scrolling.js" type="text/javascript" defer></script>
-
     <title>Welcome to Apologetics</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 </head>
 
 <body>
     <div class="screenTop header-stuff" id="siteHeader">
-        <div class="headers"><img src="img/siteHeader.png" id="headerPic" /><a
+        <div class="headers"><a href="index.html" id="headerPic"><img src="img/siteHeader.png" id="headerPic" /></a><a
                 href="https://www.patreon.com/BatJewApologetics" class="patreon-link"><img class="patreon"
                     src="img/patreonLogo.png" /></a></div>
         <nav class="screenTop navbar">
             <button class="navbar-toggle" aria-label="Toggle navigation">&#9776;</button>
             <div class="navbar-menu">
-                <div class="home">
-                    <a href="index.html">Home</a>
+                <div id="evidence" class="nav-item">
+                    <a href="#">Does G-d Exist?</a>
                 </div>
+                <div id="nt" class="nav-item">
+                    <a href="#">Is the New Testament Reliable?</a>
+                </div>
+                <div id="modern" class="nav-item">
+                    <a href="#">Modern Issues</a>
+                </div>
+            </div>
+            <!-- Moved dropdowns outside navbar-menu -->
+            <div class="evidence-dropdown">
                 <div class="cosmo">
                     <a href="cosmological.html">Cosmological Argument</a>
                 </div>
@@ -45,6 +47,8 @@
                 <div class="morallaw">
                     <a href="morallaw.html">Moral Law</a>
                 </div>
+            </div>
+            <div class="nt-dropdown">
                 <div class="reliability">
                     <a href="ntreliability.html">N.T. Reliability</a>
                 </div>
@@ -53,6 +57,17 @@
                 </div>
                 <div class="rise">
                     <a href="risen.html">The Resurrection</a>
+                </div>
+            </div>
+            <div class="modern-dropdown">
+                <div class="evolution">
+                    <a href="evolution.html">Evolution</a>
+                </div>
+                <div class="abortion">
+                    <a href="abortion.html">Abortion</a>
+                </div>
+                <div class="homosexuality">
+                    <a href="homosexuality.html">Homosexuality</a>
                 </div>
             </div>
         </nav>

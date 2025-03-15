@@ -31,6 +31,7 @@ p {
 h2 {
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: clamp(28px, 4vh, 86px);
+    color: rgb(251, 243, 224);
 }
 
 h1 {

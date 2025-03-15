@@ -9,27 +9,32 @@
     <link href="css/intdesign.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <script src="js/navtoggle.js" defer></script>
-    <title>Welcome to Apologetics</title>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <title>Welcome to Apologetics</title>
+    <script src="js/mobile-menu.js" defer></script>
+
+    <title>Intelligent Design Argument</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
 </head>
 
 <body>
     <div class="screenTop header-stuff" id="siteHeader">
-        <div class="headers"><img src="img/siteHeader.png" id="headerPic" /><a
+        <div class="headers"><a href="index.html" id="headerPic"><img src="img/siteHeader.png" id="headerPic" /></a><a
                 href="https://www.patreon.com/BatJewApologetics" class="patreon-link"><img class="patreon"
                     src="img/patreonLogo.png" /></a></div>
         <nav class="screenTop navbar">
             <button class="navbar-toggle" aria-label="Toggle navigation">&#9776;</button>
             <div class="navbar-menu">
-                <div class="home">
-                    <a href="index.html">Home</a>
+                <div id="evidence" class="nav-item">
+                    <a href="#">Does G-d Exist?</a>
                 </div>
+                <div id="nt" class="nav-item">
+                    <a href="#">Is the New Testament Reliable?</a>
+                </div>
+                <div id="modern" class="nav-item">
+                    <a href="#">Modern Issues</a>
+                </div>
+            </div>
+            <!-- Moved dropdowns outside navbar-menu -->
+            <div class="evidence-dropdown">
                 <div class="cosmo">
                     <a href="cosmological.html">Cosmological Argument</a>
                 </div>
@@ -39,6 +44,8 @@
                 <div class="morallaw">
                     <a href="morallaw.html">Moral Law</a>
                 </div>
+            </div>
+            <div class="nt-dropdown">
                 <div class="reliability">
                     <a href="ntreliability.html">N.T. Reliability</a>
                 </div>
@@ -48,31 +55,43 @@
                 <div class="rise">
                     <a href="risen.html">The Resurrection</a>
                 </div>
-                </ul>
+            </div>
+            <div class="modern-dropdown">
+                <div class="evolution">
+                    <a href="evolution.html">Evolution</a>
+                </div>
+                <div class="abortion">
+                    <a href="abortion.html">Abortion</a>
+                </div>
+                <div class="homosexuality">
+                    <a href="homosexuality.html">Homosexuality</a>
+                </div>
+            </div>
         </nav>
     </div>
-    <div class="parallax">
-        <div class="parallax__layer parallax__layer--back">
-            <div class="background"></div>
-        </div>
-        <div class="parallax__layer parallax__layer--base">
-            <div class="content">
-                <div class="full">
-                    <section class="white top">
-                        <h1 class="banded">Intelligent Design</h1>
-                        <h2>
-                            1. Everything that has a design has a designer.
-                            <br>2. The Universe has a design.
-                            <br>3. The Universe has a designer.
-                        </h2>
-                        <h2 class="banded">
-                            Is the Universe Designed?
-                        </h2>
-                    </section>
-                </div>
-                <div class="full">
-                    <section class="black">
-                        <!-- <h1>Intelligent Design</h1>
+    <main>
+        <div class="parallax">
+            <div class="parallax__layer parallax__layer--back">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+                <div class="content">
+                    <div class="full">
+                        <section class="white top">
+                            <h1 class="banded">Intelligent Design</h1>
+                            <h2>
+                                1. Everything that has a design has a designer.
+                                <br>2. The Universe has a design.
+                                <br>3. The Universe has a designer.
+                            </h2>
+                            <h2 class="banded">
+                                Is the Universe Designed?
+                            </h2>
+                        </section>
+                    </div>
+                    <div class="full">
+                        <section class="black">
+                            <!-- <h1>Intelligent Design</h1>
                     <h2>1. Everything that has a design has a designer.
                         <br>2. The Universe has a design.
                         <br>3. The Universe has a designer.
@@ -80,126 +99,133 @@
                     <h2>
                         Is the Universe Designed?
                     </h2> -->
-                        <h2 class="banded">
-                            The facts certainly S.P.I.C.E. up science!
-                        </h2>
-                        <div class="box">
-                            <div class="image-container">
-                                <img src="./img/specific.jpeg">
-                                <a href="#specific-anchor">
-                                    <div class="overlay">Super Specific</div>
-                                </a>
+                            <h2 class="banded">
+                                The facts certainly S.P.I.C.E. up science!
+                            </h2>
+                            <div class="box">
+                                <div class="image-container">
+                                    <img src="./img/specific.jpeg">
+                                    <a href="#specific-anchor">
+                                        <div class="overlay">Super Specific</div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/probability.png">
+                                    <a href="#probabilities-anchor">
+                                        <div class="overlay">Probabilities</div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/irreducible.png">
+                                    <a href="#irreducible-anchor">
+                                        <div class="overlay">Irreducible</div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/complexity.jpg">
+                                    <a href="#complexity-anchor">
+                                        <div class="overlay">Complexity</div>
+                                    </a>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/emergence.png">
+                                    <a href="#emergence-anchor">
+                                        <div class="overlay">Emergence</div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="image-container">
-                                <img src="./img/probability.png">
-                                <a href="#probabilities-anchor">
-                                    <div class="overlay">Probabilities</div>
-                                </a>
-                            </div>
-                            <div class="image-container">
-                                <img src="./img/irreducible.png">
-                                <a href="#irreducible-anchor">
-                                    <div class="overlay">Irreducible</div>
-                                </a>
-                            </div>
-                            <div class="image-container">
-                                <img src="./img/complexity.jpg">
-                                <a href="#complexity-anchor">
-                                    <div class="overlay">Complexity</div>
-                                </a>
-                            </div>
-                            <div class="image-container">
-                                <img src="./img/emergence.png">
-                                <a href="#emergence-anchor">
-                                    <div class="overlay">Emergence</div>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <div id="specific-anchor" class="anchor"></div>
-                    <section class="white" id="specific">
-                        <h2 class="banded">Super Specific</h2>
-                        <p>
-                            There are countless fine-tuned aspects of the universe.
-                            <br>These are things that if they are off by the smallest of fractions from their current
-                            values, the universe could not support life.
-                            <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
-                            <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
-                            <br>There are about 50 fine-tuned characteristics of the universe
-                            <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
-                        </p>
-                    </section>
-                    <div id="probabilities-anchor" class="anchor"></div>
-                    <section class="black" id="probabilities">
-                        <h2 class="banded">Probabilities</h2>
-                        <p>
-                            Not only that, but Earth's gravitational pull had to be accurate within a range of 1 in
-                            10<sup>40</sup>.
-                            <br>If it wasn't the moon would either crash into earth or veer off into empty space.
-                            <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
-                            support life is:
-                            <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
-                        </p>
-                    </section>
-                    <div id="irreducible-anchor" class="anchor"></div>
-                    <section class="white" id="irreducible">
-                        <h2 class="banded">Irreducible</h2>
-                        <p>
-                            Darwin himself said that his theory falls apart if there is any system that can not be
-                            broken down into smaller pieces without the system falling apart.
-                            And the fact of the matter is this: there are systems in the universe and within plants and
-                            animals that cannot be broken down into smaller pieces without breaking.
-                            This can be any of hte fine-tuned characteristics of the universe or the creation of a
-                            protein in a human cell, which on a basic level requires all of the following
-                            simultaneous in order to work: DNA, RNA, mRNA, Ribosomes, and Endoplasmic Reticulums.
-                        </p>
-                    </section>
-                    <div id="complexity-anchor" class="anchor"></div>
-                    <section class="black" id="complexity">
-                        <h2 class="banded">Complexity</h2>
-                        <p>
-                            There are countless fine-tuned aspects of the universe.
-                            <br>These are things that if they are off by the smallest of fractions from their current
-                            values, the universe could not support life.
-                            <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
-                            <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
-                            <br>Not only that, but Earth's gravitational pull had to be accurate within a range of 1 in
-                            10<sup>40</sup>.
-                            <br>If it wasn't the moon would either crash into earth or veer off into empty space.
-                            <br>There are about 50 fine-tuned characteristics of the universe
-                            <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
-                            <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
-                            support life is:
-                            <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
-                        </p>
-                    </section>
-                    <div id="emergence-anchor" class="anchor"></div>
-                    <section class="white" id="emergence">
-                        <h2 class="banded">Emergence</h2>
-                        <p>
-                            There are countless fine-tuned aspects of the universe.
-                            <br>These are things that if they are off by the smallest of fractions from their current
-                            values, the universe could not support life.
-                            <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
-                            <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
-                            <br>Not only that, but Earth's gravitational pull had to be accurate within a range of 1 in
-                            10<sup>40</sup>.
-                            <br>If it wasn't the moon would either crash into earth or veer off into empty space.
-                            <br>There are about 50 fine-tuned characteristics of the universe
-                            <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
-                            <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
-                            support life is:
-                            <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
-                        </p>
-                    </section>
+                        </section>
+                        <div id="specific-anchor" class="anchor"></div>
+                        <section class="white" id="specific">
+                            <h2 class="banded">Super Specific</h2>
+                            <p>
+                                There are countless fine-tuned aspects of the universe.
+                                <br>These are things that if they are off by the smallest of fractions from their
+                                current
+                                values, the universe could not support life.
+                                <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
+                                <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
+                                <br>There are about 50 fine-tuned characteristics of the universe
+                                <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
+                            </p>
+                        </section>
+                        <div id="probabilities-anchor" class="anchor"></div>
+                        <section class="black" id="probabilities">
+                            <h2 class="banded">Probabilities</h2>
+                            <p>
+                                Not only that, but Earth's gravitational pull had to be accurate within a range of 1 in
+                                10<sup>40</sup>.
+                                <br>If it wasn't the moon would either crash into earth or veer off into empty space.
+                                <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
+                                support life is:
+                                <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
+                            </p>
+                        </section>
+                        <div id="irreducible-anchor" class="anchor"></div>
+                        <section class="white" id="irreducible">
+                            <h2 class="banded">Irreducible</h2>
+                            <p>
+                                Darwin himself said that his theory falls apart if there is any system that can not be
+                                broken down into smaller pieces without the system falling apart.
+                                And the fact of the matter is this: there are systems in the universe and within plants
+                                and
+                                animals that cannot be broken down into smaller pieces without breaking.
+                                This can be any of hte fine-tuned characteristics of the universe or the creation of a
+                                protein in a human cell, which on a basic level requires all of the following
+                                simultaneous in order to work: DNA, RNA, mRNA, Ribosomes, and Endoplasmic Reticulums.
+                            </p>
+                        </section>
+                        <div id="complexity-anchor" class="anchor"></div>
+                        <section class="black" id="complexity">
+                            <h2 class="banded">Complexity</h2>
+                            <p>
+                                There are countless fine-tuned aspects of the universe.
+                                <br>These are things that if they are off by the smallest of fractions from their
+                                current
+                                values, the universe could not support life.
+                                <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
+                                <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
+                                <br>Not only that, but Earth's gravitational pull had to be accurate within a range of 1
+                                in
+                                10<sup>40</sup>.
+                                <br>If it wasn't the moon would either crash into earth or veer off into empty space.
+                                <br>There are about 50 fine-tuned characteristics of the universe
+                                <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
+                                <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
+                                support life is:
+                                <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
+                            </p>
+                        </section>
+                        <div id="emergence-anchor" class="anchor"></div>
+                        <section class="white" id="emergence">
+                            <h2 class="banded">Emergence</h2>
+                            <p>
+                                There are countless fine-tuned aspects of the universe.
+                                <br>These are things that if they are off by the smallest of fractions from their
+                                current
+                                values, the universe could not support life.
+                                <br>Most of us know that we are in the "Goldie-Locks Zone" of our solar system,
+                                <br>but did you know we are in the Goldie-Locks Zone of our <i>GALAXY</i>?
+                                <br>Not only that, but Earth's gravitational pull had to be accurate within a range of 1
+                                in
+                                10<sup>40</sup>.
+                                <br>If it wasn't the moon would either crash into earth or veer off into empty space.
+                                <br>There are about 50 fine-tuned characteristics of the universe
+                                <br>and about <i><b>800</b></i> fine-tuned characteristics of our solar system.
+                                <br>All-in-all, cosmologist Donal Page calculates the odds of our universe existing to
+                                support life is:
+                                <br><b>1 in <i>10,000,000,000<sup>124</sup></i></b>
+                            </p>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_us.html">Contact Us</a>
-    </footer>
+        <footer>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </footer>
+    </main>
 </body>
 
 </html>

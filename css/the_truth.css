@@ -31,6 +31,7 @@ p {
 h2 {
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: clamp(28px, 4vh, 86px);
+    color: #FFF2D7;
 }
 
 h3 {
@@ -86,7 +87,7 @@ h3 {
     background-image: url('background_images/the_truth_background.png'); /* Add your background image */
     background-size: cover;
     background-position: center;
-    height: 250vh; /* Adjust height as needed */
+    height: 290vh; /* Adjust height as needed */
 }
 
 .parallax__layer--base {
