@@ -242,4 +242,9 @@ h2 {
         padding: 0;
     }
 
+    .citation {
+        font-size: clamp(3px, .5rem, 24px);
+        vertical-align: super;
+    }
+
 }
