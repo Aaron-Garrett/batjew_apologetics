@@ -105,7 +105,6 @@ footer {
 .growth {
     position: flex;
     height: 100%;
-    top: 33%;
 }
 
 .growth::before {
@@ -163,7 +162,6 @@ footer {
 .radiation {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .radiation::before {
@@ -221,7 +219,6 @@ footer {
 .entropy {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .entropy::before {
@@ -279,7 +276,6 @@ footer {
 .relativity {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .relativity::before {
