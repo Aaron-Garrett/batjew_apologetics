@@ -171,6 +171,8 @@ footer {
     
     h2 {
         font-size: clamp(20px, 2.5vh, 50px);
+        margin-top: 2vh;
+        padding-top: 2vh;
     }
     
     h3 {
@@ -189,9 +191,10 @@ footer {
     
     section {
         width: 100vw;
-        padding-top: 32vh;
         padding-left: 1.5vw;
         padding-right: 1.5vw;
+        padding-top: 27vh; /* Match navbar height */
+        margin-top: 2vh; /* Add spacing */
     }
 
     .overlay {
@@ -228,9 +231,11 @@ footer {
     }
     
     .close {
-        padding-top: 27vh;
+        padding-top: 21vh;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 27vh;
+        margin-top: 2vh;
     }
     
     .anchor {
@@ -268,7 +273,7 @@ footer {
         align-content: space-around;
         width: 100%;
         flex-wrap: wrap;
-        padding-top: 1vh;
+        padding-top: 2%;
     }
 
     .box img {
@@ -300,9 +305,5 @@ footer {
         color:aliceblue;
         align-content: center;
         text-align: center;
-    }
-    
-    .close {
-        padding-top: 21vh;
     }
 }
