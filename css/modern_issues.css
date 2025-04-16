@@ -230,7 +230,7 @@ h2 {
     .top {
         max-height: 50%;
         overflow-y: auto;
-        padding-top: 28vh;
+        margin-top: 28vh;
     }
 
     .overlay {
