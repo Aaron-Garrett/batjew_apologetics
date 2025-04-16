@@ -517,7 +517,8 @@
     .nt-dropdown > div,
     .modern-dropdown > div {
         width: 100vw;
-        height: 33.33%;
+        min-height: 50px; /* Ensure minimum touch target size */
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -540,6 +541,7 @@
     #evidence, #nt, #modern {
         width: 100%;
         min-height: 50px; /* Ensure minimum touch target size */
+        height: auto;
     }
 
     #evidence > a, #nt > a, #modern > a {
