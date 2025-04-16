@@ -231,7 +231,9 @@ h2 {
     }
 
     .top {
+        height: 100vh;
         overflow-y: auto;
+        padding-top: 27vh;
         border: 3px solid red;
     }
 
@@ -262,10 +264,6 @@ h2 {
     .citation {
         font-size: clamp(3px, .5rem, 24px);
         vertical-align: super;
-    }
-
-    .bottom {
-        padding: 0;
     }
 
 }
