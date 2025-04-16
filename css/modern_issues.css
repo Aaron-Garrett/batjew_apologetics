@@ -6,7 +6,12 @@ body, html {
     background-color: #454545;
   }
 
+.top {
+    padding-top: 0;
+}
+
 section {
+    padding-top: 18vh;
 }
  
 p {
@@ -194,8 +199,13 @@ h2 {
 
 @media (max-width: 600px) {
     section {
-        padding-top: 24vh; /* Standardize to match navbar height */
+        padding-top: 18vh; /* Standardize to match navbar height */
     }
+
+    .top {
+        padding: 0;
+    }
+
 
     .information-section {
         align-items: space-between;
