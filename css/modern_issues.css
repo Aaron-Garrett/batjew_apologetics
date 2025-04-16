@@ -154,6 +154,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-y: auto;
 }
 
 .flip-card a.citation {
@@ -203,11 +204,13 @@ h2 {
         min-width: 85vw;
         height: 90%;
         margin: 1.5%; /* Remove right margin on small screens */
+        overflow-y: auto;
     }
 
     .flip-card-inner {
         width: 85vw;
         height: 95%;
+        overflow-y: auto;
     }
 
     .body {
@@ -216,6 +219,7 @@ h2 {
         text-align: center;
         padding-left: 0;
         padding-right: 0;
+        overflow-y: auto;
     }
 
     .body h2 {
