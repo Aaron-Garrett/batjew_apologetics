@@ -231,7 +231,6 @@ h2 {
     }
 
     .top {
-        max-height: 50%;
         overflow-y: auto;
         padding-top: 27vh;
         margin-top: 0;
