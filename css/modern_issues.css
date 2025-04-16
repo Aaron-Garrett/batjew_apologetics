@@ -227,6 +227,10 @@ h2 {
         margin-top: 4vh;
     }
 
+    h2 {
+        font-size: clamp(5px, 1.5rem, 24px);
+    }
+
     .science, .summary {
         width: 95vw;
         margin: 2vh auto;
