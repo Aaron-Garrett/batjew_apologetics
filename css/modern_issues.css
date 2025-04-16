@@ -232,8 +232,6 @@ h2 {
 
     .top {
         overflow-y: auto;
-        padding-top: 27vh;
-        height: auto;
     }
 
     .overlay {
