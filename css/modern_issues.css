@@ -204,7 +204,7 @@ h2 {
 
     .top {
         padding-top: 0;
-        padding-bottom: 1vh;
+        padding-bottom: 2vh;
     }
 
 
@@ -253,7 +253,7 @@ h2 {
 
     .summary {
         font-size: clamp(5px, 1.5rem, 24px);
-        max-height: 57%;
+        max-height: 60%;
     }
 
     .information-section {
