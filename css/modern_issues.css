@@ -265,4 +265,8 @@ h2 {
         vertical-align: super;
     }
 
+    .bottom {
+        padding: 0;
+    }
+
 }
