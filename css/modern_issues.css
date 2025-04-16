@@ -9,12 +9,12 @@ body, html {
  
 p {
     font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: clamp(7px, 2.5rem, 48px);
+    font-size: clamp(12px, 2.5rem, 48px);
 }
 
 h2 {
     font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: clamp(12px, 3rem, 86px);
+    font-size: clamp(18px, 5rem, 86px);
     color: white;
     font-weight: bold;
     margin-bottom: 2vh;
@@ -23,7 +23,7 @@ h2 {
 .body {
     padding: 1.5vw;
     font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: clamp(7px, 2.5rem, 48px);
+    font-size: clamp(12px, 4rem, 48px);
     height: 100vh;
     padding-top: 28vh;
     display: flex;
@@ -42,7 +42,7 @@ h2 {
 }
 
 .citation {
-    font-size: clamp(4px, .75rem, 24px);
+    font-size: clamp(8px, 1.5rem, 24px);
     vertical-align: super;
 }
 
@@ -61,7 +61,7 @@ h2 {
 }
 
 .flip-card p {
-    font-size: clamp(7px, 2rem, 48px);
+    font-size: clamp(12px, 2rem, 48px);
 }
 
 .flip-card-inner {
@@ -81,7 +81,6 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     padding: 20px;
     display: flex;
@@ -89,7 +88,6 @@ h2 {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-color: #d5c9c9;
 }
 
 .flip-card-back {
@@ -120,7 +118,7 @@ h2 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: clamp(7px, .75rem, 16px);
+    font-size: clamp(8px, .75rem, 16px);
     font-family: Arial, sans-serif;
     pointer-events: none;
     z-index: 1;
@@ -142,7 +140,7 @@ h2 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: clamp(7px, .75rem, 16px);
+    font-size: clamp(8px, .75rem, 16px);
     font-family: Arial, sans-serif;
     pointer-events: none;
     z-index: 1;
@@ -156,7 +154,6 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow-y: auto;
 }
 
 .flip-card a.citation {
@@ -206,17 +203,11 @@ h2 {
         min-width: 85vw;
         height: 90%;
         margin: 1.5%; /* Remove right margin on small screens */
-        overflow-y: auto;
-    }
-
-    .flip-card p {
-        font-size: clamp(7px, 1rem, 48px);
     }
 
     .flip-card-inner {
         width: 85vw;
         height: 95%;
-        overflow-y: auto;
     }
 
     .body {
@@ -225,8 +216,6 @@ h2 {
         text-align: center;
         padding-left: 0;
         padding-right: 0;
-        overflow-y: auto;
-        font-size: clamp(7px, 1.5rem, 48px);
     }
 
     .body h2 {
