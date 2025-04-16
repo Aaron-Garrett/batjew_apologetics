@@ -387,6 +387,7 @@ cite {
     
     .overlay {
         width: 40vw;
+        opacity: 1;
     }
 
     .box {

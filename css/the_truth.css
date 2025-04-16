@@ -203,6 +203,11 @@ section {
         font-size: clamp(3px, 1vh, 7px);
     }
 
+
+    .overlay {
+        opacity: 1;
+    }
+
     #top {
         padding-top: 15vh;
         padding-left: 0;

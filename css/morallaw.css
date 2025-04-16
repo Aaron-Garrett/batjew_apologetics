@@ -213,6 +213,11 @@ section {
     }
     
 
+    .overlay {
+        opacity: 1;
+    }
+
+
     .box {
         display: flex;
         align-items:center;

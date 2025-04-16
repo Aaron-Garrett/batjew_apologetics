@@ -404,6 +404,10 @@ footer {
         font-size: clamp(24px, 1.5vh, 50px);
     }
 
+    .overlay {
+        opacity: 1;
+    }
+
     .entropy h2 {
         top: 5vh;
     }
