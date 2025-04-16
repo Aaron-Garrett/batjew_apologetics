@@ -226,6 +226,7 @@ h2 {
         padding-left: 0;
         padding-right: 0;
         overflow-y: auto;
+        font-size: clamp(7px, 1.5rem, 48px);
     }
 
     .body h2 {
