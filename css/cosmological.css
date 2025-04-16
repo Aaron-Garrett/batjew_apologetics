@@ -370,7 +370,7 @@ footer {
 
 @media (max-width: 600px) {
     .cosmological {
-        font-size: clamp(7px, 5vh, 60px);
+        font-size: clamp(12px, 5vh, 60px);
     }
 
     .box img {
@@ -379,7 +379,7 @@ footer {
     }
 
     p {
-        font-size: clamp(7px, 1.5vh, 50px);
+        font-size: clamp(9px, 1.5vh, 50px);
     }
 
     .ontological {
