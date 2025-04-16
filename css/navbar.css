@@ -64,7 +64,8 @@
 .navbar-menu > div > a,
 #evidence, #nt, #modern,
 .nav-item {
-    width: 25vw;  /* Change from 33.33vw back to 25vw */
+    flex: 1; /* Use flex instead of fixed widths */
+    min-width: 0; /* Allow items to shrink if needed */
 }
 
 .navbar-menu>div {
@@ -529,5 +530,22 @@
         padding: 10px 20px;
         font-size: 1rem;
         z-index: 1003; /* Ensure it's above other elements */
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #evidence, #nt, #modern {
+        width: 100%;
+        min-height: 50px; /* Ensure minimum touch target size */
+    }
+
+    #evidence > a, #nt > a, #modern > a {
+        width: 100%;
+        padding: 10px;
+        line-height: normal;
+        height: auto;
     }
 }
