@@ -234,7 +234,7 @@ h2 {
     }
 
     h2 {
-        font-size: clamp(5px, 1.5rem, 24px);
+        font-size: clamp(5px, 2rem, 24px);
     }
 
     .science, .summary {
