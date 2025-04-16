@@ -510,7 +510,7 @@
     .modern-dropdown.submenu-active {
         display: flex;
         opacity: 1;
-        z-index: 1002;
+        z-index: 1000000000;
     }
 
     .evidence-dropdown > div,
@@ -530,7 +530,7 @@
         border: none;
         padding: 10px 20px;
         font-size: 1rem;
-        z-index: 1003; /* Ensure it's above other elements */
+        z-index: 1000000001; /* Ensure it's above other elements */
     }
 
     .navbar-menu {
