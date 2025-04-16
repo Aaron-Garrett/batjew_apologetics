@@ -26,6 +26,7 @@ h1.banded {
 
 section {
     padding-top: 27vh;
+    margin-top: 0;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
 }
@@ -194,7 +195,7 @@ footer {
         padding-left: 1.5vw;
         padding-right: 1.5vw;
         padding-top: 27vh; /* Match navbar height */
-        margin-top: 2vh; /* Add spacing */
+        margin-top: 0;
     }
 
     .overlay {
@@ -231,11 +232,10 @@ footer {
     }
     
     .close {
-        padding-top: 21vh;
+        padding-top: 27vh;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 27vh;
-        margin-top: 2vh;
+        margin-top: 0;
     }
     
     .anchor {

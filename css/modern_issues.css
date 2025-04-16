@@ -7,11 +7,13 @@ body, html {
   }
 
 .top {
-    padding-top: 0;
+    padding-top: 27vh; /* Match navbar height */
+    margin-top: 0; /* Remove margin */
 }
 
 section {
-    padding-top: 27vh; /* Standard padding for all sections */
+    padding-top: 0; /* Remove section padding since it's handled by .body */
+    margin-top: 0;
 }
  
 p {
@@ -38,6 +40,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+    min-height: calc(100vh - 27vh); /* Account for navbar height */
 }
 
 .bottom {
@@ -200,12 +204,13 @@ h2 {
 
 @media (max-width: 600px) {
     section {
-        padding-top: 27vh; /* Keep consistent padding on mobile */
-        margin-top: 2vh; /* Add margin for spacing */
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .top {
-        padding-top: 0;
+        padding-top: 27vh;
+        margin-top: 0;
         padding-bottom: 2vh;
     }
 
@@ -238,7 +243,7 @@ h2 {
         padding-right: 0;
         font-size: clamp(5px, 1rem, 24px);
         padding-top: 27vh;
-        margin-top: 2vh;
+        margin-top: 0;
     }
 
     .overlay {
