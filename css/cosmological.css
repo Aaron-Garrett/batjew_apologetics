@@ -377,6 +377,10 @@ footer {
         font-size: clamp(7px, 5vh, 60px);
     }
 
+    section {
+        padding-top: 29vh;
+    }
+
     .box img {
         max-width: 43vw;
         min-width: 43vw;
