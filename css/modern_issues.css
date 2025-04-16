@@ -29,7 +29,6 @@ h2 {
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: clamp(12px, 4rem, 48px);
     height: 100vh;
-    padding-top: 27vh; /* Standardize to match navbar height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +37,6 @@ h2 {
 
 .bottom {
     height: 90vh;
-    padding-top: 12vh;
 }
 
 .science {
@@ -225,9 +223,6 @@ h2 {
         padding-left: 0;
         padding-right: 0;
         font-size: clamp(5px, 1rem, 24px);
-        padding-top: 27vh; /* Ensure consistent padding on mobile */
-        min-height: calc(100vh - 27vh); /* Adjust height accounting for header */
-        max-height: calc(100vh - 27vh); /* Allow content to expand */
     }
 
     .body h2 {
