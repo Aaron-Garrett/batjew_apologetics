@@ -218,6 +218,7 @@ h2 {
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-top: 24vh;
         padding-left: 0;
         padding-right: 0;
         font-size: clamp(5px, 1rem, 24px);
