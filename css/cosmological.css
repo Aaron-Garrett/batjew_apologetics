@@ -374,7 +374,11 @@ footer {
     }
 
     section {
-        padding-top: 32vh;
+        width: 100vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 27vh; /* Match navbar height */
+        margin-top: 0;
     }
 
     .box img {
@@ -383,7 +387,7 @@ footer {
     }
 
     .growth h2 {
-        top: 5vh;
+        margin-top: 2vh;
     }
 
     .growth p {
@@ -394,7 +398,7 @@ footer {
     }
 
     .radiation h2 {
-        top: 5vh;
+        margin-top: 2vh;
     }
 
     .radiation p {
@@ -409,7 +413,7 @@ footer {
     }
 
     .entropy h2 {
-        top: 5vh;
+        margin-top: 2vh;
     }
 
     .entropy p {
@@ -420,7 +424,7 @@ footer {
     }
 
     .relativity h2 {
-        top: 5vh;
+        margin-top: 2vh;
     }
 
     .relativity p {
