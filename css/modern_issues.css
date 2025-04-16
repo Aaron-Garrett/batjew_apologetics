@@ -227,6 +227,12 @@ h2 {
         margin-top: 4vh;
     }
 
+    .top {
+        max-height: 50%;
+        padding-top: 0;
+        overflow-y: auto;
+    }
+
     h2 {
         font-size: clamp(5px, 1.5rem, 24px);
     }
