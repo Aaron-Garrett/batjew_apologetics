@@ -7,7 +7,7 @@ body, html {
   }
 
 section {
-    padding-top: 27vh; /* Standardize to match navbar height */
+    padding-top: 24vh; /* Standardize to match navbar height */
 }
  
 p {
@@ -195,7 +195,10 @@ h2 {
 }
 
 @media (max-width: 600px) {
-
+    section {
+        padding-top: 24vh; /* Standardize to match navbar height */
+    }
+    
     .information-section {
         align-items: space-between;
         width: 100vw;
