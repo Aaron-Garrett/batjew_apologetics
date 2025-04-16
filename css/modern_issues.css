@@ -252,7 +252,7 @@ h2 {
 
     .summary {
         font-size: clamp(5px, 1.5rem, 24px);
-        max-height: 75%;
+        max-height: 65%;
     }
 
     .information-section {
