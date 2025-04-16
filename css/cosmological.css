@@ -386,19 +386,11 @@ footer {
         min-width: 43vw;
     }
 
-    .growth h2 {
-        margin-top: 2vh;
-    }
-
     .growth p {
         top: 5vh;
         min-height: 55vh;
         max-height: 55vh;
         font-size: clamp(24px, 1.5vh, 50px);
-    }
-
-    .radiation h2 {
-        margin-top: 2vh;
     }
 
     .radiation p {
@@ -412,19 +404,11 @@ footer {
         opacity: 1;
     }
 
-    .entropy h2 {
-        margin-top: 2vh;
-    }
-
     .entropy p {
         top: 5vh;
         min-height: 55vh;
         max-height: 55vh;
         font-size: clamp(24px, 1.5vh, 50px);
-    }
-
-    .relativity h2 {
-        margin-top: 2vh;
     }
 
     .relativity p {
