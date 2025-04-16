@@ -9,7 +9,7 @@ body, html {
  
 p {
     font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: clamp(7px, 1.5rem, 48px);
+    font-size: clamp(7px, 2.5rem, 48px);
 }
 
 h2 {
@@ -23,7 +23,7 @@ h2 {
 .body {
     padding: 1.5vw;
     font-family: Garamond, 'Times New Roman', Times, serif;
-    font-size: clamp(7px, 1.5rem, 48px);
+    font-size: clamp(7px, 2.5rem, 48px);
     height: 100vh;
     padding-top: 28vh;
     display: flex;
@@ -61,7 +61,7 @@ h2 {
 }
 
 .flip-card p {
-    font-size: clamp(7px, 1.5rem, 48px);
+    font-size: clamp(7px, 2rem, 48px);
 }
 
 .flip-card-inner {
@@ -205,6 +205,10 @@ h2 {
         height: 90%;
         margin: 1.5%; /* Remove right margin on small screens */
         overflow-y: auto;
+    }
+
+    .flip-card p {
+        font-size: clamp(7px, 1rem, 48px);
     }
 
     .flip-card-inner {
