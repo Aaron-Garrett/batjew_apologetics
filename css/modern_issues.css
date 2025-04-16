@@ -232,6 +232,7 @@ h2 {
 
     .top {
         overflow-y: auto;
+        border: 3px solid red;
     }
 
     .overlay {
