@@ -106,7 +106,6 @@ cite {
 .evidence {
     position: flex;
     height: 100%;
-    top: 27vh;
 }
 
 .evidence::before {
@@ -173,7 +172,6 @@ cite {
 .interactions {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .interactions::before {
@@ -231,7 +229,6 @@ cite {
 .conversions {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .conversions::before {
@@ -289,7 +286,6 @@ cite {
 .death {
     position: flex;
     height: 100%;
-    top: 25%;
 }
 
 .death::before {
