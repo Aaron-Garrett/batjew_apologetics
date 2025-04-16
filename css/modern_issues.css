@@ -205,6 +205,10 @@ h2 {
         margin: 1.5%; /* Remove right margin on small screens */
     }
 
+    .flip-card p {
+        font-size: clamp(5px, 1rem, 24px);
+    }
+    
     .flip-card-inner {
         width: 85vw;
         height: 95%;
@@ -216,6 +220,7 @@ h2 {
         text-align: center;
         padding-left: 0;
         padding-right: 0;
+        font-size: clamp(5px, 1rem, 24px);
     }
 
     .body h2 {
@@ -225,6 +230,10 @@ h2 {
     .science, .summary {
         width: 95vw;
         margin: 2vh auto;
+    }
+
+    .summary {
+        font-size: clamp(5px, 1.5rem, 24px);
     }
 
     .information-section {
