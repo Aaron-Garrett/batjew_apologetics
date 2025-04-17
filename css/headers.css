@@ -41,17 +41,13 @@
     width: 50vw;
     margin: 0;
     text-align: center;
+    position: relative;  /* Add this to lift above background */
+    z-index: 2;  /* Higher z-index to appear above background */
 }
 
 .introduction h1 {
     margin-top: 15vh;
     color: #0E202D;
-}
-
-.introduction h1,
-.introduction p {
-    position: relative;  /* Add this to lift above background */
-    z-index: 2;  /* Higher z-index to appear above background */
 }
 
 #whatis {
