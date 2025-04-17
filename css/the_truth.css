@@ -1,24 +1,30 @@
 blockquote {
-    font-style: italic; /* Italicize the text */
-    margin: 20px 0; /* Add margin for spacing */
-    padding: 10px 20px; /* Add padding inside the blockquote */
-    background-color:rgb(251, 243, 224); /* Light background color */
+    font-style: italic;
+    /* Italicize the text */
+    margin: 20px 0;
+    /* Add margin for spacing */
+    padding: 10px 20px;
+    /* Add padding inside the blockquote */
+    background-color: rgb(251, 243, 224);
+    /* Light background color */
     opacity: .85;
     color: rgb(72, 78, 82);
     font-weight: bolder;
-    border-left: 1vw solid #173550; /* Left border for quote indication */
+    border-left: 1vw solid #173550;
+    /* Left border for quote indication */
     width: 33vw;
     text-align: center;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     display: block;
     border: solid 15px pink;
-  }
-  
+}
+
 p {
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: clamp(16px, 3vh, 48px);
@@ -40,7 +46,7 @@ h3 {
 }
 
 .banded {
-    background-color:#FFF2D7;
+    background-color: #FFF2D7;
     color: #1F3A6B;
     opacity: 1;
     font-weight: bold;
@@ -50,8 +56,10 @@ h3 {
 
 .centered-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
     padding: 2vh;
     color: #1F3A6C;
     font-family: Garamond, 'Times New Roman', Times, serif;
@@ -73,31 +81,32 @@ h3 {
 }
 
 .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 100%;
+    position: relative;
+    height: auto;
     border: solid 15px red;
 }
 
 .parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    border: solid 15px yellow;
+    transform: translateZ(-1px) scale(2);
 }
 
 .background {
-    background-image: url('background_images/the_truth_background.png'); /* Add your background image */
+    background-image: url('background_images/the_truth_background.png');
+    /* Add your background image */
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 100%;
-    border: solid 15px purple;
 }
 
 .parallax__layer--base {
     transform: translateZ(0);
+    position: relative;
 }
 
 .content {
@@ -143,7 +152,7 @@ section {
 
 .box {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     align-content: space-around;
     width: 100%;
@@ -162,7 +171,8 @@ section {
 }
 
 .image-container:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
+    /* Show overlay on hover */
 }
 
 .overlay {
@@ -170,7 +180,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
     color: white;
     width: 100%;
     height: 100%;
@@ -179,8 +190,10 @@ section {
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition effect */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition effect */
     font-size: clamp(12px, 3vh, 60px);
 }
 
@@ -236,7 +249,7 @@ section {
         background-color: rgb(72, 78, 82, .85);
         width: 80vw;
     }
-    
+
     .blue {
         background-color: rgb(23, 53, 80, .85);
         width: 80vw;
@@ -245,32 +258,35 @@ section {
     section p {
         font-size: clamp(6px, 2vh, 60px);
         width: 75vw;
-    
+
     }
-    
+
     .background {
         height: 100%;
     }
-    
+
     .banded {
         max-width: 75vw;
         font-size: clamp(24px, 3vh, 86px);
     }
-    
+
     .black {
         align-content: center;
         justify-content: center;
     }
-    
+
     blockquote {
-        margin: 1vw 0; /* Add margin for spacing */
-        padding: 3vw; /* Add padding inside the blockquote */
+        margin: 1vw 0;
+        /* Add margin for spacing */
+        padding: 3vw;
+        /* Add padding inside the blockquote */
         opacity: .85;
-        border-left: 3vw solid #173550; /* Left border for quote indication */
+        border-left: 3vw solid #173550;
+        /* Left border for quote indication */
         width: 70vw;
         text-align: center;
     }
-    
+
     .centered-container {
         min-width: 75vw;
         max-width: 75vw;
@@ -278,34 +294,34 @@ section {
 
     .box {
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: space-around;
         align-content: space-around;
         max-width: 75vw;
         min-width: 75vw;
         flex-wrap: wrap;
-        max-height: 69vh;    
+        max-height: 69vh;
     }
-    
+
     .box img {
         min-width: 36vw;
         max-width: 36vw;
         max-height: 15vh;
         min-height: 15vh;
     }
-    
+
     .image-container {
         max-width: 75vw;
         max-height: 33vh;
     }
-    
+
     .overlay {
         max-height: 33vh;
         font-size: clamp(7px, 1.5vh, 60px);
     }
-    
+
     h2 {
         font-size: clamp(20px, 3vh, 50px);
     }
-    
-    }
+
+}
