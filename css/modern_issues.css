@@ -262,8 +262,8 @@ h2 {
     }
 
     .summary {
-        font-size: clamp(5px, 1.5rem, 24px);
-        max-height: 65%;
+        font-size: clamp(5px, 1rem, 24px);
+        max-height: 80%;
     }
 
     .information-section {
