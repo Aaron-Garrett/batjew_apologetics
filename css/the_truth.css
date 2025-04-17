@@ -16,6 +16,7 @@ body, html {
     padding: 0;
     scroll-behavior: smooth;
     display: block;
+    border: solid 3px #173550;
   }
   
 p {
@@ -68,6 +69,7 @@ h3 {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
+    border: solid 3px limegreen;
 }
 
 .parallax__layer {
@@ -77,18 +79,21 @@ h3 {
     bottom: 0;
     left: 0;
     min-height: 100%;
+    border: solid 3px red;
 }
 
 .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
     height: 100%;
+    border: solid 3px yellow;
 }
 
 .background {
     background-image: url('background_images/the_truth_background.png'); /* Add your background image */
     background-size: cover;
     background-position: center;
-        height: 100%;
+    height: 100%;
+    border: solid 3px purple;
 }
 
 .parallax__layer--base {
