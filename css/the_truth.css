@@ -64,7 +64,7 @@ h3 {
 
 .parallax {
     perspective: 1px;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
@@ -86,7 +86,7 @@ h3 {
     background-image: url('background_images/the_truth_background.png'); /* Add your background image */
     background-size: cover;
     background-position: center;
-    height: 290vh; /* Adjust height as needed */
+    height: 100%;
 }
 
 .parallax__layer--base {
@@ -242,7 +242,7 @@ section {
     }
     
     .background {
-        height: 220vh;
+        height: 100%;
     }
     
     .banded {
