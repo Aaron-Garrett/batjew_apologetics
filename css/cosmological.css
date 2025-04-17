@@ -344,16 +344,22 @@ footer {
     }
 
     .ontological {
-        font-size: clamp(7px, 1.5rem, 50px);
+        font-size: clamp(7px, 1rem, 50px);
         top: 0;
         padding: 3px;
         margin: 0;
-        height: auto;
-        width: auto;
+        width: 50%;
+        max-height: 15%;
     }
 
     .overlay {
         font-size: clamp(7px, 2vh, 60px);
         opacity: 1;
+    }
+
+    cite {
+        min-width: 70vw;
+        max-width: 70vw;
+        font-size: clamp(3px, .5rem, 7px);
     }
 }
