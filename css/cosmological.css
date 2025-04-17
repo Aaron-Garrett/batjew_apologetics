@@ -404,6 +404,10 @@ footer {
         opacity: 1;
     }
 
+    .cosmohead {
+        font-size: clamp(7px, 1.25rem, 60px);
+    }
+
     cite {
         min-width: 70vw;
         max-width: 70vw;
