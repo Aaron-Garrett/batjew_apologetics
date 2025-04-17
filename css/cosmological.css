@@ -337,7 +337,7 @@ footer {
     }
 
     p {
-        font-size: clamp(12px, 2vh, 24px);
+        font-size: clamp(7px, 2.5vh, 50px);
         min-height: 55vh;
         max-height: 55vh;
         top: 7vh;
@@ -345,6 +345,7 @@ footer {
 
     .ontological {
         font-size: clamp(7px, 2.5vh, 50px);
+        top: 0;
     }
 
     .overlay {
