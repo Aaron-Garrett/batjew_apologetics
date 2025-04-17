@@ -344,12 +344,14 @@ footer {
     }
 
     .ontological {
-        font-size: clamp(7px, 1rem, 50px);
-        top: 0;
-        padding: 3px;
-        margin: 0;
-        width: 50%;
-        max-height: 15%;
+        vertical-align: middle;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        font-family: Garamond, 'Times New Roman', Times, serif;
+        overflow-y: auto;
+        font-size: clamp(7px, 1rem, 48px);
+        height: 27%;
     }
 
     .overlay {
