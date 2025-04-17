@@ -332,8 +332,9 @@ footer {
     }
 
     p {
-        font-size: clamp(9px, 1.5vh, 50px);
-        height: 57%;
+        font-size: clamp(7px, 1.5rem, 50px);
+        min-height: 57%;
+        max-height: 57%;
     }
 
     .ontological {
