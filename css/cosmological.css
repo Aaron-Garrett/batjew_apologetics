@@ -374,7 +374,7 @@ footer {
     .radiation p,
     .growth p,
     .relativity p {
-        font-size: clamp(7px, 1.25rem, 12px);
+        font-size: clamp(7px, 1.25rem, 24px);
         min-height: 55vh;
         max-height: 55vh;
         top: 7vh;
@@ -408,7 +408,7 @@ footer {
     }
 
     .cosmohead {
-        font-size: clamp(7px, 1.25rem, 60px);
+        font-size: clamp(7px, 1rem, 60px);
     }
 
     cite {
