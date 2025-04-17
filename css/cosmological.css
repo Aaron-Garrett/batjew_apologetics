@@ -369,47 +369,12 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .cosmological {
-        font-size: clamp(7px, 5vh, 60px);
-    }
-
-    section {
-        width: 100vw;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
-        padding-top: 27vh;
-        /* Match navbar height */
-        margin-top: 0;
-    }
-
-    .box img {
-        max-width: 43vw;
-        min-width: 43vw;
-    }
-
-    .growth p {
-        top: 5vh;
-        min-height: 55vh;
-        max-height: 55vh;
-        font-size: clamp(24px, 1.5vh, 50px);
-    }
-
-    .radiation p {
-        top: 5vh;
-        min-height: 55vh;
-        max-height: 55vh;
-        font-size: clamp(24px, 1.5vh, 50px);
-    }
-
-    .overlay {
-        opacity: 1;
-    }
 
     .entropy p,
     .radiaton p,
     .growth p,
     .relativity p {
-        font-size: clamp(7px, .25rem, 12px);
+        font-size: clamp(7px, 1rem, 12px);
         min-height: 55vh;
         max-height: 55vh;
         top: 7vh;
@@ -419,8 +384,29 @@ footer {
         font-size: clamp(7px, 1rem, 50px);
     }
 
+
+    .cosmological {
+        font-size: clamp(12px, 5vh, 60px);
+    }
+
+    .box img {
+        max-width: 43vw;
+        min-width: 43vw;
+    }
+
+    .growth h2, .radiation h2, .entropy h2, .relativity h2 {
+        top: 5vh;
+        position: relative;
+    }
+
     .overlay {
         font-size: clamp(7px, 2vh, 60px);
         opacity: 1;
+    }
+
+    cite {
+        min-width: 70vw;
+        max-width: 70vw;
+        font-size: clamp(3px, .5rem, 7px);
     }
 }
