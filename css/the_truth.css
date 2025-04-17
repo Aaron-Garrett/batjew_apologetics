@@ -16,7 +16,7 @@ body, html {
     padding: 0;
     scroll-behavior: smooth;
     display: block;
-    border: solid 3px #173550;
+    border: solid 15px pink;
   }
   
 p {
@@ -69,7 +69,7 @@ h3 {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    border: solid 3px limegreen;
+    border: solid 15px limegreen;
 }
 
 .parallax__layer {
@@ -79,13 +79,13 @@ h3 {
     bottom: 0;
     left: 0;
     min-height: 100%;
-    border: solid 3px red;
+    border: solid 15px red;
 }
 
 .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
     height: 100%;
-    border: solid 3px yellow;
+    border: solid 15px yellow;
 }
 
 .background {
@@ -93,7 +93,7 @@ h3 {
     background-size: cover;
     background-position: center;
     height: 100%;
-    border: solid 3px purple;
+    border: solid 15px purple;
 }
 
 .parallax__layer--base {
