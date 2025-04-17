@@ -14,7 +14,6 @@ blockquote {
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     scroll-behavior: smooth;
     display: block;
   }
@@ -243,7 +242,7 @@ section {
     }
     
     .background {
-        height: 290vh;
+        height: 250vh;
     }
     
     .banded {
