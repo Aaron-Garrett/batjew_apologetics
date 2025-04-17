@@ -52,7 +52,6 @@
     color: #0E202D;
     font-size: 2vh;
     overflow-y: auto;
-    max-height: 45vh;
 }
 
 .introduction h1,
@@ -137,6 +136,5 @@
         font-size: 2vh;
         text-align: center;
         overflow-y: auto;
-        max-height: 45vh;
     }
 }
