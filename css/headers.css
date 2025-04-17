@@ -67,7 +67,6 @@
     border-radius: 8px;  /* Optional: rounded corners */
     font-size: clamp(16px, 3vh, 68px);
     z-index: 7;
-    height: auto;
 }
 
 @media (max-width: 600px) {
