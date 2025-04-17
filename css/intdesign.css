@@ -62,11 +62,6 @@ h1.banded {
 
 .background {
     background-image: url('background_images/eclipse.jpg');
-    /* Add your background image */
-    background-size: cover;
-    background-position: center;
-    height: 300vh;
-    /* Adjust height as needed */
     position: fixed;
     top: 0;
     left: 0;
