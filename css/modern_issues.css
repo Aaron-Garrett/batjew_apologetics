@@ -14,6 +14,7 @@ body, html {
 section {
     padding-top: 0; /* Remove section padding since it's handled by .body */
     margin-top: 0;
+    overflow-y: auto;
 }
  
 p {
@@ -73,6 +74,7 @@ h2 {
 
 .flip-card p {
     font-size: clamp(12px, 2rem, 48px);
+    overflow-y: auto;
 }
 
 .flip-card-inner {
@@ -165,6 +167,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-y: auto;
 }
 
 .flip-card a.citation {
