@@ -1,0 +1,11 @@
+# robots.txt for BatJew Apologetics
+# https://aaron-garrett.github.io/batjew_apologetics/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aaron-garrett.github.io/batjew_apologetics/sitemap.xml
+
+# Disallow crawling of specific files/directories if needed
+# (currently allowing all content)
