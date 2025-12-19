@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+
 
 # Sitemap location
 Sitemap: https://aaron-garrett.github.io/batjew_apologetics/sitemap.xml
