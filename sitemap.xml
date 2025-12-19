@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Home Page -->
   <url>
     <loc>https://aaron-garrett.github.io/batjew_apologetics/</loc>
     <lastmod>2025-12-18</lastmod>
@@ -9,7 +8,6 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- About & Contact -->
   <url>
     <loc>https://aaron-garrett.github.io/batjew_apologetics/about_us.html</loc>
     <lastmod>2025-12-18</lastmod>
@@ -24,7 +22,6 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Evidence for God's Existence -->
   <url>
     <loc>https://aaron-garrett.github.io/batjew_apologetics/cosmological.html</loc>
     <lastmod>2025-12-18</lastmod>
