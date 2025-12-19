@@ -46,7 +46,6 @@
     <priority>0.9</priority>
   </url>
   
-  <!-- New Testament Evidence -->
   <url>
     <loc>https://aaron-garrett.github.io/batjew_apologetics/ntreliability.html</loc>
     <lastmod>2025-12-18</lastmod>
@@ -67,8 +66,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Modern Issues -->
+
   <url>
     <loc>https://aaron-garrett.github.io/batjew_apologetics/evolution.html</loc>
     <lastmod>2025-12-18</lastmod>
