@@ -1,0 +1,227 @@
+.hubble {
+    position: relative;
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+
+.hubble::before{
+    content:"";
+    background-image: url('background_images/hubble.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+}
+
+.growth{
+    position: flex;
+    height: 100%;
+    top: 50%;
+}
+
+.growth::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:black;
+    opacity: .48;
+    height: 100%;
+}
+
+.growth h2 {
+    top: 36%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.growth p{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    border: white 2px solid;
+    padding: 12px;
+    top: 40%;
+    position: relative;
+    margin: 25px;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.radiationimage {
+    position: relative;
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+
+.radiationimage::before{
+    content:"";
+    background-image: url('background_images/radiation.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+}
+
+.radiation{
+    position: flex;
+    height: 100%;
+    top: 50%;
+}
+
+.radiation::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:black;
+    opacity: .48;
+    height: 100%;
+}
+
+.radiation h2 {
+    top: 36%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.radiation p{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    border: white 2px solid;
+    padding: 12px;
+    top: 40%;
+    position: relative;
+    margin: 25px;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.entropyimage {
+    position: relative;
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+
+.entropyimage::before{
+    content:"";
+    background-image: url('background_images/entropy.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+}
+
+.entropy{
+    position: flex;
+    height: 100%;
+    top: 50%;
+}
+
+.entropy::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:black;
+    opacity: .48;
+    height: 100%;
+}
+
+.entropy h2 {
+    top: 36%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.entropy p{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    border: white 2px solid;
+    padding: 12px;
+    top: 40%;
+    position: relative;
+    margin: 25px;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.relativeimage {
+    position: relative;
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+
+.relativeimage::before{
+    content:"";
+    background-image: url('background_images/relativeimage.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+}
+
+.relativity{
+    position: flex;
+    height: 100%;
+    top: 50%;
+}
+
+.relativity::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:black;
+    opacity: .48;
+    height: 100%;
+}
+
+.relativity h2 {
+    top: 36%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.relativity p{
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    border: white 2px solid;
+    padding: 12px;
+    top: 40%;
+    position: relative;
+    margin: 25px;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    overflow-y: auto;
+}
