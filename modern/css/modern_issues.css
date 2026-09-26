@@ -99,7 +99,7 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
 }
