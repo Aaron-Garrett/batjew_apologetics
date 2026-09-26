@@ -55,7 +55,7 @@ h2 {
    fit their content instead of silently clipping it inside a fixed-height
    section, which left content unreachable and pushed the footer up flush
    against the last visible line. */
-section:has(.information-section) {
+.card-row-section {
     height: auto;
     min-height: 100vh;
 }
