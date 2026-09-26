@@ -1,7 +1,7 @@
-// Sizes each .flip-card to fit the taller of its front/back faces, so text
-// is never clipped or forced to internally scroll within the card border.
-// Falls back to the card's normal CSS height (45vh / mobile override) as a
-// floor, so short cards keep a consistent minimum size.
+// Sizes each .flip-card to fit whichever face (front or back) is currently
+// showing, so text is never clipped and short entries don't get stretched
+// out to match a much longer entry on the other face. Re-measures whenever
+// a card is flipped, and on load/resize.
 (function () {
     function measureNaturalHeight(el) {
         if (!el) return 0;
@@ -15,20 +15,32 @@
         return height;
     }
 
-    function autoSizeFlipCards() {
-        document.querySelectorAll('.flip-card').forEach(function (card) {
-            var front = card.querySelector('.flip-card-front');
-            var back = card.querySelector('.flip-card-back');
+    function sizeCardToCurrentFace(card) {
+        var front = card.querySelector('.flip-card-front');
+        var back = card.querySelector('.flip-card-back');
+        var activeFace = card.classList.contains('flipped') ? back : front;
 
-            card.style.height = '';
-            var baselineHeight = parseFloat(getComputedStyle(card).height) || 0;
+        card.style.height = '';
+        var baselineHeight = parseFloat(getComputedStyle(card).height) || 0;
 
-            var needed = Math.max(measureNaturalHeight(front), measureNaturalHeight(back));
-            card.style.height = Math.max(baselineHeight, needed + 8) + 'px';
-        });
+        var needed = measureNaturalHeight(activeFace);
+        card.style.height = Math.max(baselineHeight, needed + 8) + 'px';
     }
 
-    document.addEventListener('DOMContentLoaded', autoSizeFlipCards);
+    function autoSizeFlipCards() {
+        document.querySelectorAll('.flip-card').forEach(sizeCardToCurrentFace);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        autoSizeFlipCards();
+        document.querySelectorAll('.flip-card').forEach(function (card) {
+            // Runs after flip-cards.js's click handler (registered first) has
+            // already toggled the "flipped" class, so this reads the new state.
+            card.addEventListener('click', function () {
+                sizeCardToCurrentFace(card);
+            });
+        });
+    });
     window.addEventListener('load', autoSizeFlipCards);
 
     var resizeTimeout;
