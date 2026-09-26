@@ -4,6 +4,7 @@ body, html {
     height: 100%;
     scroll-behavior: smooth;
     background-color: #454545;
+    overflow-x: hidden;
   }
 
 .top {
@@ -47,6 +48,16 @@ h2 {
 
 .bottom {
     height: 90vh;
+}
+
+/* Card-row sections can legitimately need more than one screen's worth of
+   height (a long card row, several sections back). Let just these grow to
+   fit their content instead of silently clipping it inside a fixed-height
+   section, which left content unreachable and pushed the footer up flush
+   against the last visible line. */
+section:has(.information-section) {
+    height: auto;
+    min-height: 100vh;
 }
 
 .science {
