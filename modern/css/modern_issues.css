@@ -65,7 +65,6 @@ h2 {
     min-width: 25vw;
     margin-right: 1vw;
     height: 45vh;
-    transition: height 0.4s ease;
     perspective: 1000px;
     cursor: pointer;
     background-color: #d5c9c9;
@@ -99,7 +98,7 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
