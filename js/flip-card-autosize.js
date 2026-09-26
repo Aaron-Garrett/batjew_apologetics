@@ -1,7 +1,8 @@
-// Sizes each .flip-card to fit whichever face (front or back) is currently
-// showing, so text is never clipped and short entries don't get stretched
-// out to match a much longer entry on the other face. Re-measures whenever
-// a card is flipped, and on load/resize.
+// Gives every .flip-card within the same row (.information-section) a
+// single, shared height — sized to fit the tallest front or back face
+// found anywhere in that row — so the cards stay a uniform size instead
+// of each growing/shrinking to its own content. Recalculated on load and
+// on resize (viewport-height changes shift the vh-based floor height).
 (function () {
     function measureNaturalHeight(el) {
         if (!el) return 0;
@@ -15,32 +16,39 @@
         return height;
     }
 
-    function sizeCardToCurrentFace(card) {
-        var front = card.querySelector('.flip-card-front');
-        var back = card.querySelector('.flip-card-back');
-        var activeFace = card.classList.contains('flipped') ? back : front;
+    function sizeCardRow(row) {
+        var cards = row.querySelectorAll('.flip-card');
+        if (!cards.length) return;
 
-        card.style.height = '';
-        var baselineHeight = parseFloat(getComputedStyle(card).height) || 0;
+        // Reset first so the baseline (CSS default, e.g. 45vh) reflects the
+        // current viewport rather than a previous run's inline height.
+        cards.forEach(function (card) { card.style.height = ''; });
+        var baselineHeight = parseFloat(getComputedStyle(cards[0]).height) || 0;
 
-        var needed = measureNaturalHeight(activeFace);
-        card.style.height = Math.max(baselineHeight, needed + 8) + 'px';
+        var tallest = 0;
+        cards.forEach(function (card) {
+            tallest = Math.max(
+                tallest,
+                measureNaturalHeight(card.querySelector('.flip-card-front')),
+                measureNaturalHeight(card.querySelector('.flip-card-back'))
+            );
+        });
+
+        // Generous, proportional buffer (not just a flat pixel amount): the
+        // viewer's system may render the font stack (Garamond / Times New
+        // Roman / serif fallback) with slightly different line-wrapping or
+        // line-height than whatever rendered this measurement, so a fixed
+        // few-pixel pad isn't reliably enough headroom across systems.
+        var withBuffer = Math.ceil(tallest * 1.1 + 24);
+        var sharedHeight = Math.max(baselineHeight, withBuffer) + 'px';
+        cards.forEach(function (card) { card.style.height = sharedHeight; });
     }
 
     function autoSizeFlipCards() {
-        document.querySelectorAll('.flip-card').forEach(sizeCardToCurrentFace);
+        document.querySelectorAll('.information-section').forEach(sizeCardRow);
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        autoSizeFlipCards();
-        document.querySelectorAll('.flip-card').forEach(function (card) {
-            // Runs after flip-cards.js's click handler (registered first) has
-            // already toggled the "flipped" class, so this reads the new state.
-            card.addEventListener('click', function () {
-                sizeCardToCurrentFace(card);
-            });
-        });
-    });
+    document.addEventListener('DOMContentLoaded', autoSizeFlipCards);
     window.addEventListener('load', autoSizeFlipCards);
 
     var resizeTimeout;
