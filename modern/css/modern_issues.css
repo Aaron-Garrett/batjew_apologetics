@@ -16,6 +16,12 @@ section {
     padding-top: 0; /* Remove section padding since it's handled by .body */
     margin-top: 0;
     overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+section::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
 }
  
 p {
@@ -55,10 +61,10 @@ h2 {
    fit their content instead of silently clipping it inside a fixed-height
    section, which left content unreachable and pushed the footer up flush
    against the last visible line. */
-.card-row-section {
-    height: auto;
-    min-height: 100vh;
-}
+/* Card-row sections keep the site's one-screen-per-section height (from
+   .bottom / snapscroll.css). Any content taller than that scrolls inside
+   the section itself (see the shared `section` rule above for the hidden
+   scrollbar), rather than growing the page. */
 
 .science {
     width: 80vw;
@@ -85,6 +91,12 @@ h2 {
 .flip-card p {
     font-size: clamp(12px, 2rem, 48px);
     overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.flip-card p::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
 }
 
 .flip-card-inner {
@@ -201,6 +213,11 @@ h2 {
     align-items: center;
     gap: 1vw;
     overflow-x: auto;
+    /* Only claim horizontal touch gestures. Without this, a vertical swipe
+       that starts over the card row (which spans the full section on
+       mobile) can get swallowed as an horizontal scroll attempt instead of
+       scrolling the page/section, making the page feel stuck on mobile. */
+    touch-action: pan-x;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
 }

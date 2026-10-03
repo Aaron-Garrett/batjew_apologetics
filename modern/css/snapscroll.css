@@ -8,3 +8,19 @@ section {
     scroll-snap-align: start;
     scroll-padding: 400px;
 }
+
+@media (max-width: 600px) {
+    /* Mandatory scroll-snap is a common cause of vertical scrolling feeling
+       "stuck" on mobile touch: a swipe that doesn't carry enough velocity
+       to reach the next snap point just springs back to where it started.
+       Full-screen snap sections are also a worse fit on mobile now that a
+       section's content can be taller than one screen. Disable snapping
+       below the mobile breakpoint; desktop keeps the original behavior. */
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        scroll-snap-align: none;
+    }
+}
