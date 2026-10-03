@@ -9,6 +9,16 @@ section {
     scroll-padding: 400px;
 }
 
+/* The last section on the page is followed by the footer (height: 10vh in
+   footer.css), not another full-screen section. Reserve that space so the
+   last section + footer together fill exactly one screen, instead of the
+   footer being pushed past the bottom of the viewport. */
+main section:last-of-type {
+    /* Reads --footer-height from footer.css instead of a hardcoded number,
+       so this can never drift out of sync with the footer's real height. */
+    height: calc(100vh - var(--footer-height, 10vh));
+}
+
 @media (max-width: 600px) {
     /* Mandatory scroll-snap is a common cause of vertical scrolling feeling
        "stuck" on mobile touch: a swipe that doesn't carry enough velocity

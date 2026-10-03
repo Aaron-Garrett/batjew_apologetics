@@ -15,13 +15,13 @@ body, html {
 section {
     padding-top: 0; /* Remove section padding since it's handled by .body */
     margin-top: 0;
-    overflow-y: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-}
-
-section::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
+    /* The section itself never scrolls — it's a hard cap at the viewport
+       height (see snapscroll.css). The text-holding elements inside it
+       (.summary, .flip-card p, ...) handle their own overflow with a
+       hidden scrollbar instead. Without this, the section and its content
+       competed for the same touch gesture, which is what made vertical
+       scrolling feel stuck on mobile. */
+    overflow: hidden;
 }
  
 p {
@@ -35,26 +35,33 @@ h2 {
     font-size: clamp(18px, 5rem, 86px);
     color: white;
     font-weight: bold;
+    margin-top: 0;
     margin-bottom: 2vh;
 }
 
 .body {
+    /* border-box + height: 100% means this always exactly fills its parent
+       <section> (100vh normally, 90vh for the last section, which reserves
+       room for the footer) — padding-top included in that budget rather
+       than added on top of it, so .body can never overflow its section. */
+    box-sizing: border-box;
+    height: 100%;
     padding: 1.5vw;
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: clamp(12px, 4rem, 48px);
-    height: 100vh;
     padding-top: 27vh; /* Match navbar height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 0;
-    min-height: calc(100vh - 27vh); /* Account for navbar height */
 }
 
-.bottom {
-    height: 90vh;
-}
+/* .bottom no longer sets its own height: .body's height: 100% already
+   matches its parent <section>, which is itself 90vh via the
+   `main section:last-of-type` rule in snapscroll.css. Hardcoding 90vh here
+   too, redundantly, would let the two drift out of sync if the footer's
+   height (footer.css) ever changes. */
 
 /* Card-row sections can legitimately need more than one screen's worth of
    height (a long card row, several sections back). Let just these grow to
@@ -204,15 +211,19 @@ h2 {
 .information-section {
     margin: 20px 0;
     width: 85vw;
-    min-height: 100px;
-    height: calc(100vh - 27vh);
-    flex-shrink: 0;
+    /* Fill whatever space is left under the heading within the section's
+       fixed height, instead of claiming a flat height that doesn't account
+       for the heading's own size (min-height: 0 lets a flex child shrink
+       below its content size, which is required for it to scroll). */
+    flex: 1;
+    min-height: 0;
     display: flex;
     flex-direction: row;  /* default - items flow left to right */
     justify-content: flex-start;
     align-items: center;
     gap: 1vw;
     overflow-x: auto;
+    overflow-y: auto;
     /* Only claim horizontal touch gestures. Without this, a vertical swipe
        that starts over the card row (which spans the full section on
        mobile) can get swallowed as an horizontal scroll attempt instead of
@@ -233,6 +244,21 @@ h2 {
     padding: 1.5vw;
     width: 85vw;
     text-align: center;
+    /* Fill whatever space is left under the heading within the section's
+       fixed height, and scroll internally (hidden scrollbar) if the text
+       is taller than that — instead of pushing the section taller than
+       the viewport. min-height: 0 is required for a flex child to be
+       allowed to shrink below its content size and actually scroll. */
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.summary::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
 }
 
 @media (max-width: 600px) {

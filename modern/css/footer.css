@@ -1,3 +1,10 @@
+:root {
+    /* Single source of truth for the footer's height, so anything that
+       needs to reserve space for it (e.g. snapscroll.css's last-section
+       sizing) reads this instead of duplicating the number. */
+    --footer-height: 10vh;
+}
+
 footer {
     background-color: black;
     position:relative;
@@ -5,7 +12,7 @@ footer {
     color: white;
     display: flex;
     width: 100vw;
-    height: 10vh;
+    height: var(--footer-height);
     justify-content: center;
     gap: 15vw;
     align-items: center;
