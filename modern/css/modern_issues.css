@@ -134,7 +134,16 @@ h2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* flex-start, not center: when the text is short enough to fit, this
+       still looks centered (overflow-y: auto has nothing to do, so the
+       content just sits where flex-start puts it — but combined with the
+       box's own vertical padding/line-height it reads as balanced). When
+       text overflows, centering a flex item splits the overflow evenly
+       above AND below the box, and scrollTop can't go negative — so the
+       portion that overflowed above becomes permanently unreachable,
+       cutting off the start of the text. flex-start keeps the real
+       beginning always reachable at scrollTop: 0. */
+    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
 }
