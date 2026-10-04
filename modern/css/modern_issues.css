@@ -262,6 +262,12 @@ h2 {
     box-sizing: border-box;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    /* Center the text within the box, instead of it sitting flush at the
+       top of whatever space flex: 1 gives it. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .summary::-webkit-scrollbar {
