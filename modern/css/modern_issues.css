@@ -87,7 +87,14 @@ h2 {
     justify-content: center;
     align-items: center;
     min-width: 25vw;
-    height: 45vh;
+    /* Match the row's actual available height (itself flex: 1, so it
+       already fits whatever space is left under the heading) instead of a
+       fixed 45vh. A fixed height doesn't know how much room the row
+       actually has — at a shorter window, or on the last section (which
+       also reserves room for the footer), 45vh could exceed what's left,
+       cutting off the card's own top/bottom border. */
+    height: 100%;
+    box-sizing: border-box; /* keep the border inside the 100% height, not added beyond it */
     perspective: 1000px;
     cursor: pointer;
     background-color: #d5c9c9;
